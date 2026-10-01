@@ -1,0 +1,703 @@
+{
+  "hero": {
+    "eyebrow": {
+      "en": "Authorized DeLaval dealer · Middle East",
+      "ar": "وكيل معتمد لـ ديلافال · الشرق الأوسط"
+    },
+    "title": {
+      "en": "Modern dairy farming,",
+      "ar": "حلول الألبان الحديثة،"
+    },
+    "highlight": {
+      "en": "delivered across the region.",
+      "ar": "من عمّان إلى المنطقة كلها."
+    },
+    "intro": {
+      "en": "Rhine River Distribution supplies, installs and services DeLaval milking, cooling and herd-management equipment for dairy farms in Jordan, Iraq, Syria, Lebanon, the West Bank and Qatar.",
+      "ar": "تقوم شركة نهر الراين للتوزيع بتوريد وتركيب وصيانة معدات ديلافال للحلب والتبريد وإدارة القطيع لمزارع الألبان في الأردن والعراق وسوريا ولبنان والضفة الغربية وقطر."
+    },
+    "hq_line": {
+      "en": "Headquartered in Amman, Jordan",
+      "ar": "المقر الرئيسي: عمّان، الأردن"
+    }
+  },
+  "about": {
+    "eyebrow": {
+      "en": "About RRD",
+      "ar": "عن الشركة"
+    },
+    "title": {
+      "en": "One partner from the parlour to the bulk tank.",
+      "ar": "شريك واحد من صالة الحلب حتى خزان التبريد."
+    },
+    "intro": {
+      "en": "We bring DeLaval's proven technology to farms of every size across the Middle East — from family herds to large commercial dairies — and stay with our customers long after installation.",
+      "ar": "ننقل تقنيات ديلافال المجرّبة إلى المزارع بمختلف أحجامها في الشرق الأوسط، من القطعان العائلية إلى مزارع الألبان التجارية الكبيرة، ونبقى إلى جانب عملائنا بعد التركيب بوقت طويل."
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Genuine equipment",
+          "ar": "معدات أصلية"
+        },
+        "text": {
+          "en": "Authorized DeLaval supply, with original spare parts and consumables backed by the manufacturer.",
+          "ar": "توريد معتمد من ديلافال، مع قطع غيار ومستهلكات أصلية مدعومة من الشركة المصنّعة."
+        }
+      },
+      {
+        "title": {
+          "en": "Regional reach",
+          "ar": "حضور إقليمي"
+        },
+        "text": {
+          "en": "From our Amman headquarters we serve six markets with local knowledge of climate, logistics and regulations.",
+          "ar": "من مقرنا في عمّان نخدم ستة أسواق بمعرفة محلية بالمناخ والخدمات اللوجستية والأنظمة."
+        }
+      },
+      {
+        "title": {
+          "en": "Trained technicians",
+          "ar": "فنيون مدرَّبون"
+        },
+        "text": {
+          "en": "Our service team is trained on DeLaval systems for installation, preventive maintenance and fast repairs.",
+          "ar": "فريق الخدمة لدينا مدرَّب على أنظمة ديلافال للتركيب والصيانة الوقائية والإصلاح السريع."
+        }
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": {
+      "en": "Solutions",
+      "ar": "الحلول"
+    },
+    "title": {
+      "en": "Everything a modern dairy runs on.",
+      "ar": "كل ما تحتاجه مزرعة الألبان الحديثة."
+    },
+    "intro": {
+      "en": "We help you choose the right system for your herd size, barn layout and budget — then install it and keep it running.",
+      "ar": "نساعدك على اختيار النظام المناسب لحجم قطيعك وتصميم الحظيرة وميزانيتك، ثم نركّبه ونحافظ على تشغيله."
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Milking systems",
+          "ar": "أنظمة الحلب"
+        },
+        "text": {
+          "en": "Parlours, rotaries and voluntary robotic milking for gentle, efficient milking.",
+          "ar": "صالات حلب ومحالب دوّارة وأنظمة حلب آلية (روبوتية) لحلب لطيف وفعّال."
+        },
+        "tags": [
+          {
+            "en": "VMS™",
+            "ar": ""
+          },
+          {
+            "en": "Rotary",
+            "ar": "دوّار"
+          },
+          {
+            "en": "Herringbone",
+            "ar": "متوازي مائل"
+          },
+          {
+            "en": "Parallel",
+            "ar": "متوازي"
+          }
+        ],
+        "icon": "milking",
+        "image": "images/rotary-platform.jpg",
+        "image_fit": "cover"
+      },
+      {
+        "title": {
+          "en": "Milk cooling",
+          "ar": "تبريد الحليب"
+        },
+        "text": {
+          "en": "Bulk tanks and cooling solutions that protect milk quality in hot regional summers.",
+          "ar": "خزانات تبريد وحلول تحافظ على جودة الحليب في صيف المنطقة الحار."
+        },
+        "tags": [
+          {
+            "en": "Bulk tanks",
+            "ar": "خزانات مبرّدة"
+          },
+          {
+            "en": "Pre-cooling",
+            "ar": "تبريد أولي"
+          }
+        ],
+        "icon": "cooling",
+        "image": "images/milk-tank.jpg",
+        "image_fit": "contain"
+      },
+      {
+        "title": {
+          "en": "Herd management",
+          "ar": "إدارة القطيع"
+        },
+        "text": {
+          "en": "Software and sensors that track yield, health and fertility for every cow.",
+          "ar": "برمجيات وحساسات لمتابعة الإنتاج والصحة والخصوبة لكل بقرة."
+        },
+        "tags": [
+          {
+            "en": "DelPro™",
+            "ar": ""
+          },
+          {
+            "en": "Activity meters",
+            "ar": "مقاييس النشاط"
+          }
+        ],
+        "icon": "herd",
+        "image": "",
+        "image_fit": "cover"
+      },
+      {
+        "title": {
+          "en": "Milking hygiene",
+          "ar": "نظافة الحلب"
+        },
+        "text": {
+          "en": "Teat care, liners, detergents and filters for healthy udders and clean milk.",
+          "ar": "منتجات العناية بالحلمات والبطانات والمنظفات والفلاتر لضرع سليم وحليب نظيف."
+        },
+        "tags": [
+          {
+            "en": "Teat dips",
+            "ar": "مطهرات الحلمات"
+          },
+          {
+            "en": "Liners",
+            "ar": "بطانات"
+          },
+          {
+            "en": "Detergents",
+            "ar": "منظفات"
+          }
+        ],
+        "icon": "hygiene",
+        "image": "",
+        "image_fit": "cover"
+      },
+      {
+        "title": {
+          "en": "Animal comfort",
+          "ar": "راحة الحيوان"
+        },
+        "text": {
+          "en": "Cow brushes, stalls, mats and cooling for calmer cows and higher yields.",
+          "ar": "فرش الأبقار والحواجز والفرشات وأنظمة التبريد لأبقار أهدأ وإنتاج أعلى."
+        },
+        "tags": [
+          {
+            "en": "Swinging brushes",
+            "ar": "فرش دوّارة"
+          },
+          {
+            "en": "Stalls & mats",
+            "ar": "حواجز وفرشات"
+          }
+        ],
+        "icon": "comfort",
+        "image": "",
+        "image_fit": "cover"
+      },
+      {
+        "title": {
+          "en": "Feeding & calf care",
+          "ar": "التغذية ورعاية العجول"
+        },
+        "text": {
+          "en": "Feeding equipment and calf-rearing solutions for a strong start and steady growth.",
+          "ar": "معدات التغذية وحلول تربية العجول لبداية قوية ونمو منتظم."
+        },
+        "tags": [
+          {
+            "en": "Calf feeders",
+            "ar": "مغذيات العجول"
+          },
+          {
+            "en": "Feed pushers",
+            "ar": "دافعات العلف"
+          }
+        ],
+        "icon": "feeding",
+        "image": "",
+        "image_fit": "cover"
+      }
+    ]
+  },
+  "parlours": {
+    "eyebrow": {
+      "en": "Milking parlours",
+      "ar": "صالات الحلب"
+    },
+    "title": {
+      "en": "Rotary parlours for herds that keep growing.",
+      "ar": "محالب دوّارة لقطعان تكبر باستمرار."
+    },
+    "intro": {
+      "en": "On a rotary, cows step onto a slowly turning platform, are prepped and attached at one fixed point, milk during one turn, and walk off where they came in. Your milkers stay in place while the herd comes to them.",
+      "ar": "في المحلب الدوّار تصعد الأبقار إلى منصة تدور ببطء، ويتم تجهيزها وتركيب وحدات الحلب في نقطة ثابتة، وتُحلب خلال دورة واحدة، ثم تخرج من حيث دخلت. يبقى العاملون في مكانهم بينما يأتي القطيع إليهم."
+    },
+    "photo": "images/rotary-milking.jpg",
+    "photo_caption": {
+      "en": "A DeLaval rotary parlour in operation: every cow is milked in a single turn of the platform.",
+      "ar": "محلب ديلافال دوّار أثناء التشغيل: تُحلب كل بقرة خلال دورة واحدة للمنصة."
+    },
+    "types": [
+      {
+        "label": {
+          "en": "Medium to large herds",
+          "ar": "قطعان متوسطة إلى كبيرة"
+        },
+        "title": {
+          "en": "Parallel parlour",
+          "ar": "محلب متوازي"
+        },
+        "text": {
+          "en": "Cows stand side by side, and the operator attaches units from behind, between the hind legs. Compact, fast and safe for your staff.",
+          "ar": "تقف الأبقار جنباً إلى جنب ويركّب العامل وحدات الحلب من الخلف بين الأرجل الخلفية. تصميم مدمج وسريع وآمن للعاملين."
+        },
+        "image": "images/parallel.jpg",
+        "image_fit": "cover"
+      },
+      {
+        "label": {
+          "en": "Small to medium herds",
+          "ar": "قطعان صغيرة إلى متوسطة"
+        },
+        "title": {
+          "en": "Herringbone parlour",
+          "ar": "محلب متوازي مائل (هيرنغ بون)"
+        },
+        "text": {
+          "en": "Cows stand at an angle, so the operator gets a clear side view of the udder. A proven, flexible layout that is easy to expand.",
+          "ar": "تقف الأبقار بزاوية مائلة فيرى العامل الضرع بوضوح من الجانب. تصميم مجرّب ومرن وسهل التوسعة."
+        },
+        "image": "images/herringbone.jpg",
+        "image_fit": "cover"
+      },
+      {
+        "label": {
+          "en": "Voluntary milking",
+          "ar": "حلب طوعي"
+        },
+        "title": {
+          "en": "Robotic milking (VMS™)",
+          "ar": "الحلب الآلي (VMS™)"
+        },
+        "text": {
+          "en": "Cows choose when to be milked, and the robot arm attaches automatically. Less labour and more data on every cow.",
+          "ar": "تختار الأبقار وقت الحلب ويقوم الذراع الآلي بالتركيب تلقائياً. عمالة أقل وبيانات أكثر عن كل بقرة."
+        },
+        "image": "images/vms.jpg",
+        "image_fit": "contain"
+      }
+    ]
+  },
+  "gallery": [],
+  "financing": {
+    "eyebrow": {
+      "en": "Project financing",
+      "ar": "تمويل المشاريع"
+    },
+    "title": {
+      "en": "Leasing and monthly payment options.",
+      "ar": "خيارات التأجير والدفع الشهري."
+    },
+    "intro": {
+      "en": "Where applicable, RRD can offer leasing or monthly payments for your project. All financing is subject to case review and credit history.",
+      "ar": "حيثما ينطبق، يمكن لـ RRD توفير التأجير التمويلي أو الدفعات الشهرية لمشروعك. يخضع أي تمويل لدراسة الحالة والسجل الائتماني."
+    },
+    "options": [
+      {
+        "badge": {
+          "en": "Where applicable",
+          "ar": "حيثما ينطبق"
+        },
+        "title": {
+          "en": "Leasing",
+          "ar": "التأجير التمويلي"
+        },
+        "text": {
+          "en": "Use the equipment on a leasing agreement and pay over an agreed period, with the option to own it at the end of the lease.",
+          "ar": "استخدم المعدات بموجب عقد تأجير وسدّد على فترة متفق عليها، مع إمكانية تملّكها في نهاية العقد."
+        },
+        "points": [
+          {
+            "en": "Lower upfront investment",
+            "ar": "استثمار أولي أقل"
+          },
+          {
+            "en": "Fixed, predictable lease payments",
+            "ar": "دفعات إيجار ثابتة ومعروفة مسبقاً"
+          }
+        ],
+        "highlight": false
+      },
+      {
+        "badge": {
+          "en": "Where applicable",
+          "ar": "حيثما ينطبق"
+        },
+        "title": {
+          "en": "Monthly payments",
+          "ar": "الدفعات الشهرية"
+        },
+        "text": {
+          "en": "Pay a down payment, then spread the balance over monthly instalments for an agreed term.",
+          "ar": "ادفع دفعة أولى، ثم قسّط المبلغ المتبقي على دفعات شهرية لمدة متفق عليها."
+        },
+        "points": [
+          {
+            "en": "Down payment and term agreed per project",
+            "ar": "الدفعة الأولى والمدة تُحددان لكل مشروع"
+          },
+          {
+            "en": "Repayments spread over the agreed term",
+            "ar": "السداد موزّع على المدة المتفق عليها"
+          }
+        ],
+        "highlight": false
+      },
+      {
+        "badge": {
+          "en": "Eligibility",
+          "ar": "الأهلية"
+        },
+        "title": {
+          "en": "Subject to review",
+          "ar": "وفق دراسة الطلب"
+        },
+        "text": {
+          "en": "Every financing request is assessed case by case. Approval, terms and amounts depend on:",
+          "ar": "تتم دراسة كل طلب تمويل على حدة. تعتمد الموافقة والشروط والمبالغ على:"
+        },
+        "points": [
+          {
+            "en": "Review of your project and farm",
+            "ar": "دراسة المشروع والمزرعة"
+          },
+          {
+            "en": "Your credit history",
+            "ar": "السجل الائتماني"
+          },
+          {
+            "en": "Supporting documents",
+            "ar": "المستندات الداعمة"
+          }
+        ],
+        "highlight": true
+      }
+    ]
+  },
+  "service": {
+    "eyebrow": {
+      "en": "Service & support",
+      "ar": "الخدمة والدعم"
+    },
+    "title": {
+      "en": "How we work with your farm.",
+      "ar": "كيف نعمل مع مزرعتك."
+    },
+    "intro": {
+      "en": "Equipment is only as good as the support behind it. Every project follows the same path, from the first farm visit to scheduled maintenance.",
+      "ar": "قيمة المعدات بقدر الدعم الذي يقف خلفها. كل مشروع يمر بالمراحل نفسها، من الزيارة الأولى للمزرعة حتى الصيانة الدورية."
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Farm assessment",
+          "ar": "تقييم المزرعة"
+        },
+        "text": {
+          "en": "We visit, study your herd and barn, and design the right solution.",
+          "ar": "نزور المزرعة وندرس القطيع والحظيرة ونصمّم الحل المناسب."
+        }
+      },
+      {
+        "title": {
+          "en": "Supply & installation",
+          "ar": "التوريد والتركيب"
+        },
+        "text": {
+          "en": "We deliver, install and commission the equipment on site.",
+          "ar": "نورّد المعدات ونركّبها ونشغّلها في الموقع."
+        }
+      },
+      {
+        "title": {
+          "en": "Training",
+          "ar": "التدريب"
+        },
+        "text": {
+          "en": "Your team learns to operate, clean and get the most from the system.",
+          "ar": "يتعلم فريقك تشغيل النظام وتنظيفه والاستفادة القصوى منه."
+        }
+      },
+      {
+        "title": {
+          "en": "Maintenance & parts",
+          "ar": "الصيانة وقطع الغيار"
+        },
+        "text": {
+          "en": "Preventive service visits and genuine spare parts keep you milking.",
+          "ar": "زيارات صيانة وقائية وقطع غيار أصلية لضمان استمرار الحلب."
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "eyebrow": {
+      "en": "Coverage",
+      "ar": "مناطق التغطية"
+    },
+    "title": {
+      "en": "Six markets, one team.",
+      "ar": "ستة أسواق، فريق واحد."
+    },
+    "intro": {
+      "en": "RRD is the DeLaval dealer for the following countries. Contact our Amman headquarters for sales and service anywhere in the region.",
+      "ar": "شركة RRD هي وكيل ديلافال في الدول التالية. تواصل مع مقرنا في عمّان للمبيعات والخدمة في أي مكان في المنطقة."
+    },
+    "countries": [
+      {
+        "code": "JO",
+        "name": {
+          "en": "Jordan",
+          "ar": "الأردن"
+        },
+        "cities": {
+          "en": "Amman",
+          "ar": "عمّان"
+        },
+        "tag": {
+          "en": "Headquarters",
+          "ar": "المقر الرئيسي"
+        },
+        "headquarters": true
+      },
+      {
+        "code": "IQ",
+        "name": {
+          "en": "Iraq",
+          "ar": "العراق"
+        },
+        "cities": {
+          "en": "Baghdad · Erbil",
+          "ar": "بغداد · أربيل"
+        },
+        "tag": {
+          "en": "Sales & service",
+          "ar": "مبيعات وخدمة"
+        },
+        "headquarters": false
+      },
+      {
+        "code": "SY",
+        "name": {
+          "en": "Syria",
+          "ar": "سوريا"
+        },
+        "cities": {
+          "en": "Damascus",
+          "ar": "دمشق"
+        },
+        "tag": {
+          "en": "Sales & service",
+          "ar": "مبيعات وخدمة"
+        },
+        "headquarters": false
+      },
+      {
+        "code": "LB",
+        "name": {
+          "en": "Lebanon",
+          "ar": "لبنان"
+        },
+        "cities": {
+          "en": "Beirut",
+          "ar": "بيروت"
+        },
+        "tag": {
+          "en": "Sales & service",
+          "ar": "مبيعات وخدمة"
+        },
+        "headquarters": false
+      },
+      {
+        "code": "PS",
+        "name": {
+          "en": "West Bank",
+          "ar": "الضفة الغربية"
+        },
+        "cities": {
+          "en": "Ramallah",
+          "ar": "رام الله"
+        },
+        "tag": {
+          "en": "Sales & service",
+          "ar": "مبيعات وخدمة"
+        },
+        "headquarters": false
+      },
+      {
+        "code": "QA",
+        "name": {
+          "en": "Qatar",
+          "ar": "قطر"
+        },
+        "cities": {
+          "en": "Doha",
+          "ar": "الدوحة"
+        },
+        "tag": {
+          "en": "Sales & service",
+          "ar": "مبيعات وخدمة"
+        },
+        "headquarters": false
+      }
+    ],
+    "map": [
+      {
+        "name": {
+          "en": "Amman",
+          "ar": "عمّان"
+        },
+        "country": {
+          "en": "Jordan",
+          "ar": "الأردن"
+        },
+        "lat": 31.95,
+        "lon": 35.93,
+        "label": "right",
+        "headquarters": true
+      },
+      {
+        "name": {
+          "en": "Damascus",
+          "ar": "دمشق"
+        },
+        "country": {
+          "en": "Syria",
+          "ar": "سوريا"
+        },
+        "lat": 33.51,
+        "lon": 36.29,
+        "label": "right",
+        "headquarters": false
+      },
+      {
+        "name": {
+          "en": "Beirut",
+          "ar": "بيروت"
+        },
+        "country": {
+          "en": "Lebanon",
+          "ar": "لبنان"
+        },
+        "lat": 33.89,
+        "lon": 35.5,
+        "label": "left",
+        "headquarters": false
+      },
+      {
+        "name": {
+          "en": "Ramallah",
+          "ar": "رام الله"
+        },
+        "country": {
+          "en": "West Bank",
+          "ar": "الضفة الغربية"
+        },
+        "lat": 31.9,
+        "lon": 35.2,
+        "label": "below",
+        "headquarters": false
+      },
+      {
+        "name": {
+          "en": "Baghdad",
+          "ar": "بغداد"
+        },
+        "country": {
+          "en": "Iraq",
+          "ar": "العراق"
+        },
+        "lat": 33.31,
+        "lon": 44.37,
+        "label": "right",
+        "headquarters": false
+      },
+      {
+        "name": {
+          "en": "Erbil",
+          "ar": "أربيل"
+        },
+        "country": {
+          "en": "Iraq",
+          "ar": "العراق"
+        },
+        "lat": 36.19,
+        "lon": 44.01,
+        "label": "right",
+        "headquarters": false
+      },
+      {
+        "name": {
+          "en": "Doha",
+          "ar": "الدوحة"
+        },
+        "country": {
+          "en": "Qatar",
+          "ar": "قطر"
+        },
+        "lat": 25.29,
+        "lon": 51.53,
+        "label": "left",
+        "headquarters": false
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": {
+      "en": "Contact",
+      "ar": "اتصل بنا"
+    },
+    "title": {
+      "en": "Talk to our team in Amman.",
+      "ar": "تحدّث مع فريقنا في عمّان."
+    },
+    "address": {
+      "en": "Amman, Jordan — street address",
+      "ar": "عمّان، الأردن — العنوان"
+    },
+    "phone": "+962 77 511 1552",
+    "email": "info@rrdjo.com",
+    "hours": {
+      "en": "Sunday – Thursday",
+      "ar": "الأحد – الخميس"
+    },
+    "form_note": {
+      "en": "We reply within one working day.",
+      "ar": "نرد خلال يوم عمل واحد."
+    }
+  },
+  "footer": {
+    "company": {
+      "en": "Rhine River Distribution Co. (RRD) · Amman, Jordan",
+      "ar": "شركة نهر الراين للتوزيع (RRD) · عمّان، الأردن"
+    },
+    "trademark": {
+      "en": "DeLaval is a trademark of the DeLaval Group. RRD is an authorized dealer.",
+      "ar": "ديلافال علامة تجارية لمجموعة ديلافال. RRD وكيل معتمد."
+    }
+  }
+}

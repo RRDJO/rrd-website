@@ -1,0 +1,807 @@
+# RRD website editor settings.
+# Change only the "repo:" line below to your GitHub username, e.g.  repo: rrd-jo/rrd-website
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/rrd-website
+  branch: main
+  base_url: https://api.netlify.com
+site_url: https://www.rrdjo.com
+display_url: https://www.rrdjo.com
+logo_url: /images/favicon.png
+media_folder: images
+public_folder: images
+editor:
+  preview: false
+collections:
+- name: website
+  label: Website
+  editor:
+    preview: false
+  files:
+  - name: site
+    label: All website content (English and Arabic)
+    file: content/site.json
+    format: json
+    fields:
+    - name: hero
+      label: Top of page
+      widget: object
+      fields:
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Headline (first part)
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: highlight
+        label: Headline (coloured part)
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: hq_line
+        label: Headquarters line
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+    - name: about
+      label: About RRD
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: items
+        label: Points
+        widget: list
+        summary: '{{fields.title.en}}'
+        fields:
+        - name: title
+          label: Title
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: text
+          label: Text
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: ar
+            label: Arabic
+            widget: text
+            required: false
+    - name: products
+      label: Solutions (products)
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: items
+        label: Products
+        widget: list
+        summary: '{{fields.title.en}}'
+        hint: Products with a photo are shown as large cards at the top.
+        fields:
+        - name: title
+          label: Name
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: text
+          label: Description
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: ar
+            label: Arabic
+            widget: text
+            required: false
+        - name: tags
+          label: Tags
+          widget: list
+          required: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: icon
+          label: Icon (used when there is no photo)
+          widget: select
+          default: milking
+          options:
+          - milking
+          - cooling
+          - herd
+          - hygiene
+          - comfort
+          - feeding
+        - name: image
+          label: Photo (optional)
+          widget: image
+          required: false
+          choose_url: false
+        - &id001
+          name: image_fit
+          label: Photo fit
+          widget: select
+          default: cover
+          options:
+          - label: Fill the frame (crop edges)
+            value: cover
+          - label: Show the whole photo (for product shots on white)
+            value: contain
+    - name: parlours
+      label: Milking parlours
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: photo
+        label: Main rotary photo
+        widget: image
+        required: false
+        choose_url: false
+      - name: photo_caption
+        label: Photo caption
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: types
+        label: Parlour types
+        widget: list
+        summary: '{{fields.title.en}}'
+        fields:
+        - name: label
+          label: Small label (e.g. herd size)
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: title
+          label: Name
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: text
+          label: Description
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: ar
+            label: Arabic
+            widget: text
+            required: false
+        - name: image
+          label: Photo
+          widget: image
+          required: false
+          choose_url: false
+        - *id001
+    - name: gallery
+      label: Photo gallery (installations)
+      widget: list
+      required: false
+      summary: '{{fields.caption.en}}'
+      hint: Optional. Photos of your installations appear under the parlour types.
+      fields:
+      - name: image
+        label: Photo
+        widget: image
+        required: true
+        choose_url: false
+      - name: caption
+        label: Caption
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+    - name: financing
+      label: Financing
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: options
+        label: Options
+        widget: list
+        summary: '{{fields.title.en}}'
+        fields:
+        - name: badge
+          label: Small badge
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: title
+          label: Title
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: text
+          label: Text
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: ar
+            label: Arabic
+            widget: text
+            required: false
+        - name: points
+          label: Bullet points
+          widget: list
+          required: false
+          summary: '{{fields.en}}'
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: highlight
+          label: Show with dashed outline (for conditions)
+          widget: boolean
+          default: false
+    - name: service
+      label: Service steps
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: steps
+        label: Steps (numbered automatically)
+        widget: list
+        summary: '{{fields.title.en}}'
+        fields:
+        - name: title
+          label: Title
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: text
+          label: Text
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: text
+          - name: ar
+            label: Arabic
+            widget: text
+            required: false
+    - name: coverage
+      label: Countries and map
+      widget: object
+      collapsed: true
+      fields:
+      - name: eyebrow
+        label: Small label above the heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: intro
+        label: Intro text
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: text
+        - name: ar
+          label: Arabic
+          widget: text
+          required: false
+      - name: countries
+        label: Country cards
+        widget: list
+        summary: '{{fields.code}} · {{fields.name.en}}'
+        hint: These also fill the country list in the request form.
+        fields:
+        - name: code
+          label: Two-letter code
+          widget: string
+        - name: name
+          label: Country
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: cities
+          label: Cities
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: tag
+          label: Tag (e.g. Sales & service)
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: headquarters
+          label: Headquarters (dark card)
+          widget: boolean
+          default: false
+      - name: map
+        label: Map cities
+        widget: list
+        summary: '{{fields.name.en}}'
+        hint: Find a city's latitude and longitude on Google Maps (right-click the city).
+        fields:
+        - name: name
+          label: City
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: country
+          label: Country
+          widget: object
+          collapsed: false
+          fields:
+          - name: en
+            label: English
+            widget: string
+          - name: ar
+            label: Arabic
+            widget: string
+            required: false
+        - name: lat
+          label: Latitude (e.g. 31.95)
+          widget: number
+          value_type: float
+        - name: lon
+          label: Longitude (e.g. 35.93)
+          widget: number
+          value_type: float
+        - name: label
+          label: Label position
+          widget: select
+          default: right
+          options:
+          - right
+          - left
+          - above
+          - below
+        - name: headquarters
+          label: Headquarters (routes start here)
+          widget: boolean
+          default: false
+    - name: contact
+      label: Contact details
+      widget: object
+      fields:
+      - name: eyebrow
+        label: Small label
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: title
+        label: Heading
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: address
+        label: Address
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: phone
+        label: Phone
+        widget: string
+      - name: email
+        label: Email
+        widget: string
+      - name: hours
+        label: Working hours
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: form_note
+        label: Note under the form (optional)
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+    - name: footer
+      label: Footer
+      widget: object
+      collapsed: true
+      fields:
+      - name: company
+        label: Company line
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
+      - name: trademark
+        label: Trademark note
+        widget: object
+        collapsed: false
+        fields:
+        - name: en
+          label: English
+          widget: string
+        - name: ar
+          label: Arabic
+          widget: string
+          required: false
