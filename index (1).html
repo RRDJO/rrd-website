@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Rhine River Distribution (RRD), authorized DeLaval dealer for Jordan, Iraq, Syria, Lebanon, the West Bank and Qatar: milking systems, rotary parlours, milk cooling and service.">
+<link rel="icon" href="favicon.png">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Rhine River Distribution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ink:#0E2F57;        /* deep brand blue */
+  --river:#144681;      /* RRD logo blue */
+  --river-soft:#E3EAF6;
+  --milk:#F6F8FB;       /* cool white ground */
+  --card:#FFFFFF;
+  --wheat:#E64229;      /* RRD logo orange-red */
+  --wheat-soft:#FCE6E1;
+  --on-accent:#FFFFFF;
+  --text:#121F33;
+  --muted:#56657A;
+  --line:#D6DEEA;
+  --grid:#CCD7E6;
+  --display:"Bricolage Grotesque","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --body:"IBM Plex Sans","IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ink:#EAF0F8; --river:#7FA6E6; --river-soft:#16284A; --milk:#0A1424; --card:#101D33;
+    --wheat:#F2765F; --wheat-soft:#3A1F1A; --on-accent:#1A0A0C; --text:#E4EAF3; --muted:#95A3B8; --line:#22324D; --grid:#1D2D47;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ink:#EAF0F8; --river:#7FA6E6; --river-soft:#16284A; --milk:#0A1424; --card:#101D33;
+  --wheat:#F2765F; --wheat-soft:#3A1F1A; --on-accent:#1A0A0C; --text:#E4EAF3; --muted:#95A3B8; --line:#22324D; --grid:#1D2D47;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--milk);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;padding-inline:16px}
+html[lang="ar"] body{font-family:"IBM Plex Sans Arabic",var(--body);line-height:1.8}
+html[lang="ar"] .en, html:not([lang="ar"]) .ar{display:none}
+
+.wrap{max-width:1140px;margin-inline:auto}
+a{color:var(--river)}
+:focus-visible{outline:2px solid var(--wheat);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);text-wrap:balance;margin:0;line-height:1.1}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-family:"IBM Plex Sans Arabic",sans-serif;font-weight:700;line-height:1.35}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--wheat);font-weight:500}
+html[lang="ar"] .eyebrow{font-family:"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;font-size:14px;font-weight:600}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--milk) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin-inline:-16px;padding-inline:16px}
+.nav{display:flex;align-items:center;gap:24px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand b{font-family:Montserrat,var(--display);font-size:23px;font-weight:800;letter-spacing:.01em;color:var(--river)}
+.brand small{display:block;font:700 9.5px/1.3 Montserrat,var(--body);color:var(--river);letter-spacing:.12em;text-transform:uppercase}
+.links{display:flex;gap:22px;margin-inline-start:auto}
+.links a{color:var(--text);text-decoration:none;font-size:15px;font-weight:500}
+.links a:hover{color:var(--river)}
+.lang{border:1px solid var(--line);background:var(--card);color:var(--ink);font:500 14px var(--body);padding:6px 14px;border-radius:999px;cursor:pointer}
+html[lang="ar"] .lang{font-family:var(--body)}
+.lang:hover{border-color:var(--river)}
+.links{gap:18px}
+@media (max-width:1100px){.links{display:none}.lang{margin-inline-start:auto}}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:64px 56px}
+.hero h1{font-size:clamp(36px,5.4vw,62px);font-weight:800;letter-spacing:-.02em;margin-block:14px 20px}
+.hero h1 em{font-style:normal;color:var(--river)}
+.hero .lede{font-size:18px;color:var(--muted);max-width:52ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;font-size:15px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn.primary{background:var(--ink);color:var(--milk)}
+.btn.primary:hover{background:var(--river)}
+.btn.ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn.ghost:hover{border-color:var(--river)}
+.dealer{margin-top:28px;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.dealer .dot{width:8px;height:8px;border-radius:50%;background:var(--wheat);flex:none}
+
+.map{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.map svg{display:block;width:100%;height:auto;direction:ltr}
+.rot-stage svg{direction:ltr}
+.map figcaption{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:11px;color:var(--muted);padding:8px 4px 0;letter-spacing:.04em}
+html[lang="ar"] .map figcaption{font-family:"IBM Plex Sans Arabic",sans-serif;font-size:12px}
+.m-grid{stroke:var(--grid);stroke-width:1}
+.m-deg{fill:var(--muted);font:10px var(--mono)}
+.m-route{fill:none;stroke:var(--river);stroke-width:1.6;stroke-dasharray:4 5;opacity:.75}
+.m-city{fill:var(--card);stroke:var(--river);stroke-width:2}
+.m-hq{fill:var(--wheat)}
+.m-hq-ring{fill:none;stroke:var(--wheat);stroke-width:1.5;opacity:.5}
+.m-lbl{fill:var(--ink);font:600 13px var(--body)}
+.m-sub{fill:var(--muted);font:11px var(--body)}
+html[lang="ar"] .m-lbl, html[lang="ar"] .m-sub{font-family:"IBM Plex Sans Arabic",sans-serif}
+@media (prefers-reduced-motion: no-preference){
+  .m-route{animation:flow 1.6s linear infinite}
+  @keyframes flow{to{stroke-dashoffset:-18}}
+}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:36px;padding-block:40px}}
+
+/* Sections */
+section{padding-block:72px;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:1fr 1.3fr;gap:32px;align-items:end;margin-bottom:40px}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px);font-weight:700;margin-top:10px}
+.sec-head p{color:var(--muted);max-width:60ch}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:14px}section{padding-block:52px}}
+
+/* About */
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.about div{display:grid;gap:8px;align-content:start}
+.about h3{font-size:20px;font-weight:700}
+.about p{color:var(--muted)}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:24px}}
+
+/* Products */
+.products{display:grid;grid-template-columns:repeat(12,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.prod{background:var(--card);padding:28px;display:grid;gap:10px;align-content:start}
+.prod svg{width:36px;height:36px;color:var(--river)}
+.prod h3{font-size:19px;font-weight:700}
+.prod p{color:var(--muted);font-size:15px}
+.prod ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.prod li{font-size:12.5px;background:var(--river-soft);color:var(--ink);padding:3px 10px;border-radius:999px}
+.prod{grid-column:span 3}
+.prod.feature{grid-column:span 6;padding:0;gap:0}
+.prod .ph{aspect-ratio:16/9;max-width:100%;overflow:hidden;background:#fff}
+.prod .ph img{width:100%;height:100%;display:block}
+.prod .ph.cover img{object-fit:cover}
+.prod .ph.contain img{object-fit:contain;padding:10px}
+.prod .pbody{padding:24px 28px 28px;display:grid;gap:10px;align-content:start}
+@media (max-width:900px){.prod{grid-column:span 6}.prod.feature{grid-column:span 12}}
+@media (max-width:560px){.prod{grid-column:span 12}}
+
+/* Service */
+.service{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+.step{border-top:2px solid var(--ink);padding-top:18px;display:grid;gap:8px;align-content:start}
+.step .n{font-family:var(--mono);font-size:12px;color:var(--wheat);letter-spacing:.1em}
+.step h3{font-size:18px;font-weight:700}
+.step p{color:var(--muted);font-size:15px}
+@media (max-width:900px){.service{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.service{grid-template-columns:1fr}}
+
+/* Countries */
+.countries{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.country{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:6px;align-content:start}
+.country.hq{background:var(--ink);border-color:var(--ink)}
+.country.hq h3,.country.hq .city{color:var(--milk)}
+.country.hq .tag{background:var(--wheat);color:var(--on-accent)}
+.country .code{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.12em}
+.country.hq .code{color:var(--wheat)}
+.country h3{font-size:19px;font-weight:700}
+.country .city{font-size:14px;color:var(--muted)}
+.tag{justify-self:start;font-size:11.5px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--wheat-soft);color:var(--ink);margin-top:6px}
+@media (max-width:1000px){.countries{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:620px){.countries{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:380px){.countries{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+.info{display:grid;gap:22px;align-content:start}
+.info dl{margin:0;display:grid;gap:18px}
+.info dt{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+html[lang="ar"] .info dt{font-family:"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;font-size:13px}
+.info dd{margin:4px 0 0;font-size:17px;color:var(--ink);font-weight:500}
+.ph{color:var(--wheat)}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:14px;font-weight:500;color:var(--ink)}
+input,select,textarea{font:inherit;font-size:15px;color:var(--text);background:var(--milk);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--river);box-shadow:0 0 0 3px var(--river-soft)}
+textarea{min-height:110px;resize:vertical}
+.out{background:var(--river-soft);border-radius:10px;padding:16px;display:grid;gap:10px;font-size:14px}
+.out pre{margin:0;white-space:pre-wrap;font:13px/1.55 var(--mono);color:var(--ink)}
+@media (max-width:860px){.contact{grid-template-columns:1fr;gap:32px}}
+
+/* Map trucks */
+.m-truck circle{fill:var(--wheat);stroke:var(--card);stroke-width:1.5}
+
+/* Reveal + hero entrance (resting state is always visible) */
+@media (prefers-reduced-motion: no-preference){
+  @keyframes rise{from{opacity:.25;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .hero > *{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .hero > *:nth-child(2){animation-delay:.15s}
+  [data-reveal].in{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  [data-reveal].in:nth-child(2){animation-delay:.08s}
+  [data-reveal].in:nth-child(3){animation-delay:.16s}
+  [data-reveal].in:nth-child(4){animation-delay:.24s}
+  [data-reveal].in:nth-child(5){animation-delay:.32s}
+  [data-reveal].in:nth-child(6){animation-delay:.4s}
+  .prod{transition:transform .25s, box-shadow .25s}
+  .prod:hover{transform:translateY(-3px);box-shadow:0 10px 28px -14px color-mix(in srgb,var(--ink) 40%,transparent);position:relative;z-index:1}
+}
+
+/* Rotary parlour */
+.rot-photo{margin:0 0 40px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.rot-photo img{display:block;width:100%;aspect-ratio:2/1;object-fit:cover;object-position:50% 68%;max-width:100%}
+.rot-photo figcaption{padding:12px 18px;font-size:14px;color:var(--muted)}
+@media (max-width:600px){.rot-photo img{aspect-ratio:4/3}}
+.rotary{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+@media (max-width:900px){.rotary{grid-template-columns:1fr}}
+.rot-stage{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;position:relative}
+.rot-stage svg{display:block;width:100%;height:auto;max-width:560px;margin-inline:auto}
+.rot-note{position:absolute;inset-inline-end:14px;top:12px;font:500 11px var(--mono);color:var(--muted);letter-spacing:.06em}
+html[lang="ar"] .rot-note{font-family:"IBM Plex Sans Arabic",sans-serif}
+.r-plat{fill:var(--river-soft);stroke:var(--ink);stroke-width:2}
+.r-hub{fill:var(--card);stroke:var(--line);stroke-width:2}
+.r-div{stroke:var(--ink);stroke-width:1.2;opacity:.45}
+.r-cow{fill:#FFFFFF;stroke:#0B2A55;stroke-width:1.4}
+.r-spot{fill:#0B2A55}
+.r-cluster{fill:var(--river)}
+.r-phase{fill:none;stroke-width:9;stroke-linecap:butt}
+.r-lbl{font:600 12px var(--body);fill:var(--ink)}
+.r-lane{stroke:var(--wheat);stroke-width:2.5;fill:none;marker-end:url(#arr)}
+.r-big{font:800 38px var(--display);fill:var(--ink)}
+.r-small{font:500 11px var(--body);fill:var(--muted)}
+html[lang="ar"] .r-lbl,html[lang="ar"] .r-small{font-family:"IBM Plex Sans Arabic",sans-serif}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted);padding:10px 8px 4px}
+.legend i{display:inline-block;width:14px;height:6px;border-radius:2px;margin-inline-end:6px;vertical-align:middle}
+.calc{display:grid;gap:20px}
+.calc h3{font-size:24px}
+.calc > p{color:var(--muted)}
+.slider{display:grid;gap:6px}
+.slider .top{display:flex;justify-content:space-between;gap:12px;font-size:14px;font-weight:500;color:var(--ink)}
+.slider output{font:600 15px var(--mono);color:var(--river);font-variant-numeric:tabular-nums}
+input[type=range]{padding:0;border:0;background:transparent;accent-color:var(--wheat);height:28px}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.results div{background:var(--card);padding:16px 18px;display:grid;gap:2px}
+.results b{font:800 30px var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+.results span{font-size:13px;color:var(--muted)}
+.fine{font-size:12.5px;color:var(--muted)}
+
+.ptypes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+@media (max-width:860px){.ptypes{grid-template-columns:1fr}}
+.ptype{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.ptype .pic{background:var(--river-soft);aspect-ratio:16/10;max-width:100%;display:flex;align-items:center;justify-content:center}
+.ptype .pic{background:#fff}
+.ptype .pic img{width:100%;height:100%;display:block}
+.ptype .pic img.cover{object-fit:cover}
+.ptype .pic img.contain{object-fit:contain;padding:8px}
+.ptype .body{padding:18px 20px 22px;display:grid;gap:6px;align-content:start}
+.ptype h3{font-size:18px}
+.ptype p{font-size:14.5px;color:var(--muted)}
+.ptype .fit{font:500 12px var(--mono);color:var(--wheat);letter-spacing:.04em}
+html[lang="ar"] .ptype .fit{font-family:"IBM Plex Sans Arabic",sans-serif}
+.p-cow{fill:#fff;stroke:#0B2A55;stroke-width:1.3}
+.p-pit{fill:color-mix(in srgb,var(--ink) 12%,transparent)}
+.p-op{fill:var(--wheat)}
+.p-arm{fill:none;stroke:var(--wheat);stroke-width:4;stroke-linecap:round}
+@media (prefers-reduced-motion: no-preference){
+  .p-op{animation:walk 5s ease-in-out infinite alternate}
+  @keyframes walk{from{transform:translateX(-70px)}to{transform:translateX(70px)}}
+  .p-armg{transform-origin:150px 100px;animation:arm 2.6s ease-in-out infinite alternate}
+  @keyframes arm{from{transform:rotate(-14deg)}to{transform:rotate(12deg)}}
+}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.gallery figure{margin:0;border-radius:12px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery figcaption{padding:10px 14px;font-size:13.5px;color:var(--muted)}
+@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.gallery{grid-template-columns:1fr}}
+
+/* Financing */
+.fin{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:900px){.fin{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.fin{grid-template-columns:1fr}}
+.scheme{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:8px;align-content:start}
+.scheme .kind{justify-self:start;font-size:11.5px;font-weight:600;padding:2px 10px;border-radius:999px;background:var(--river-soft);color:var(--ink)}
+.scheme .kind.r{background:var(--wheat-soft)}
+.scheme.review{border-color:var(--wheat);border-style:dashed}
+.scheme h3{font-size:19px}
+.scheme p{color:var(--muted);font-size:15px}
+.scheme ul{margin:4px 0 0;padding-inline-start:18px;color:var(--text);font-size:14px;display:grid;gap:4px}
+.fcalc{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+@media (max-width:860px){.fcalc{grid-template-columns:1fr}}
+.fcalc .in{padding:28px;display:grid;gap:18px;align-content:start}
+.fcalc .outp{padding:28px;background:var(--ink);color:var(--milk);display:grid;gap:18px;align-content:start}
+.fcalc .outp h3{color:var(--milk)}
+.fcalc .big{font:800 clamp(34px,5vw,48px)/1 var(--display);font-variant-numeric:tabular-nums}
+.fcalc .lbl{font-size:13px;opacity:.75}
+.fcalc dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:10px 16px;font-size:15px;border-top:1px solid color-mix(in srgb,var(--milk) 20%,transparent);padding-top:16px}
+.fcalc dt{opacity:.8}
+.fcalc dd{margin:0;font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:end}
+.fcalc .note{font-size:12.5px;opacity:.7}
+.fcalc .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:420px){.fcalc .two{grid-template-columns:1fr}}
+.fcalc .outp{background:#0B2A55;color:#F6F8FB}
+.fcalc .outp h3{color:#F6F8FB}
+
+footer{border-top:1px solid var(--line);padding-block:28px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted)}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="#top" aria-label="RRD home">
+      <svg width="42" height="42" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="14" fill="#144681"/><rect x="11" y="11" width="78" height="78" rx="8" fill="#FFFFFF"/><image href="data:image/png;base64,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" x="21" y="21.5" width="58" height="57.2"/></svg>
+      <span><b>RRD</b><small><span class="en">Rhine River Distribution</span><span class="ar">نهر الراين للتوزيع</span></small></span>
+    </a>
+    <div class="links">
+      <a href="#about"><span class="en">About</span><span class="ar">من نحن</span></a>
+      <a href="#products"><span class="en">Solutions</span><span class="ar">الحلول</span></a>
+      <a href="#parlours"><span class="en">Rotary parlours</span><span class="ar">المحالب الدوّارة</span></a>
+      <a href="#financing"><span class="en">Financing</span><span class="ar">التمويل</span></a>
+      <a href="#service"><span class="en">Service</span><span class="ar">الخدمة</span></a>
+      <a href="#coverage"><span class="en">Coverage</span><span class="ar">التغطية</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="ar">اتصل بنا</span></a>
+    </div>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">العربية</button>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div>
+      <p class="eyebrow"><span class="en">Authorized DeLaval dealer · Middle East</span><span class="ar">وكيل معتمد لـ ديلافال · الشرق الأوسط</span></p>
+      <h1><span class="en">Modern dairy farming, <em>delivered across the region.</em></span><span class="ar">حلول الألبان الحديثة، <em>من عمّان إلى المنطقة كلها.</em></span></h1>
+      <p class="lede"><span class="en">Rhine River Distribution supplies, installs and services DeLaval milking, cooling and herd-management equipment for dairy farms in Jordan, Iraq, Syria, Lebanon, the West Bank and Qatar.</span><span class="ar">تقوم شركة نهر الراين للتوزيع بتوريد وتركيب وصيانة معدات ديلافال للحلب والتبريد وإدارة القطيع لمزارع الألبان في الأردن والعراق وسوريا ولبنان والضفة الغربية وقطر.</span></p>
+      <div class="cta">
+        <a class="btn primary" href="#contact"><span class="en">Request a quote</span><span class="ar">اطلب عرض سعر</span></a>
+        <a class="btn ghost" href="#products"><span class="en">Explore solutions</span><span class="ar">تعرّف على الحلول</span></a>
+      </div>
+      <p class="dealer"><span class="dot"></span><span class="en">Headquartered in Amman, Jordan</span><span class="ar">المقر الرئيسي: عمّان، الأردن</span></p>
+    </div>
+
+    <figure class="map" style="margin:0">
+      <svg viewBox="0 0 600 440" role="img" aria-label="Coverage map: routes from Amman headquarters to Beirut, Damascus, Ramallah, Baghdad, Erbil and Doha">
+        <!-- schematic lat/long grid: x=(lon-34)*30+20, y=(37.5-lat)*30+20 -->
+        <g class="m-grid">
+          <line x1="20" y1="35" x2="580" y2="35"/><line x1="20" y1="125" x2="580" y2="125"/>
+          <line x1="20" y1="215" x2="580" y2="215"/><line x1="20" y1="305" x2="580" y2="305"/>
+          <line x1="20" y1="395" x2="580" y2="395"/>
+          <line x1="50" y1="20" x2="50" y2="410"/><line x1="170" y1="20" x2="170" y2="410"/>
+          <line x1="290" y1="20" x2="290" y2="410"/><line x1="410" y1="20" x2="410" y2="410"/>
+          <line x1="530" y1="20" x2="530" y2="410"/>
+        </g>
+        <g class="m-deg">
+          <text x="24" y="31">37°N</text><text x="24" y="121">34°N</text><text x="24" y="211">31°N</text><text x="24" y="301">28°N</text><text x="24" y="391">25°N</text>
+          <text x="54" y="428">35°E</text><text x="174" y="428">39°E</text><text x="294" y="428">43°E</text><text x="414" y="428">47°E</text><text x="534" y="428">51°E</text>
+        </g>
+        <!-- routes from Amman (78,186) -->
+        <path class="m-route" id="r1" d="M78 186 Q80 162 89 140"/>
+        <path class="m-route" id="r2" d="M78 186 Q66 196 56 188"/>
+        <path class="m-route" id="r3" d="M78 186 Q200 140 332 146"/>
+        <path class="m-route" id="r4" d="M78 186 Q190 70 320 59"/>
+        <g id="mapDyn">
+        <path class="m-route" id="r6" d="M78 186 Q58 160 65 128"/>
+        <path class="m-route" id="r5" d="M78 186 Q330 250 546 386"/>
+        <g class="m-truck">
+          <circle r="4"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle>
+          <circle r="4"><animateMotion dur="2s" begin="0.6s" repeatCount="indefinite"><mpath href="#r2"/></animateMotion></circle>
+          <circle r="4"><animateMotion dur="4.5s" begin="0.3s" repeatCount="indefinite"><mpath href="#r3"/></animateMotion></circle>
+          <circle r="4"><animateMotion dur="5s" begin="1.2s" repeatCount="indefinite"><mpath href="#r4"/></animateMotion></circle>
+          <circle r="4"><animateMotion dur="2.6s" begin="1s" repeatCount="indefinite"><mpath href="#r6"/></animateMotion></circle>
+          <circle r="4"><animateMotion dur="6.5s" begin="0.8s" repeatCount="indefinite"><mpath href="#r5"/></animateMotion></circle>
+        </g>
+        <!-- cities -->
+        <circle class="m-city" cx="89" cy="140" r="5"/>
+        <circle class="m-city" cx="56" cy="188" r="5"/>
+        <circle class="m-city" cx="332" cy="146" r="5"/>
+        <circle class="m-city" cx="320" cy="59" r="5"/>
+        <circle class="m-city" cx="546" cy="386" r="5"/>
+        <circle class="m-city" cx="65" cy="128" r="5"/>
+        <circle class="m-hq-ring" cx="78" cy="186" r="15"/>
+        <circle class="m-hq" cx="78" cy="186" r="7"/>
+        <!-- labels EN -->
+        <g class="en">
+          <text class="m-lbl" x="100" y="206">Amman · HQ</text><text class="m-sub" x="100" y="222">Jordan</text>
+          <text class="m-lbl" x="56" y="112" text-anchor="end">Beirut</text><text class="m-sub" x="56" y="98" text-anchor="end">Lebanon</text>
+          <text class="m-lbl" x="100" y="136">Damascus</text><text class="m-sub" x="100" y="152">Syria</text>
+          <text class="m-lbl" x="46" y="240" text-anchor="middle">Ramallah</text><text class="m-sub" x="46" y="256" text-anchor="middle">West Bank</text>
+          <text class="m-lbl" x="344" y="150">Baghdad</text><text class="m-sub" x="344" y="166">Iraq</text>
+          <text class="m-lbl" x="332" y="63">Erbil</text><text class="m-sub" x="332" y="79">Iraq</text>
+          <text class="m-lbl" x="534" y="366" text-anchor="end">Doha</text><text class="m-sub" x="534" y="350" text-anchor="end">Qatar</text>
+        </g>
+        <g class="ar">
+          <text class="m-lbl" x="100" y="206">عمّان · المقر</text><text class="m-sub" x="100" y="222">الأردن</text>
+          <text class="m-lbl" x="56" y="112" text-anchor="end">بيروت</text><text class="m-sub" x="56" y="98" text-anchor="end">لبنان</text>
+          <text class="m-lbl" x="100" y="136">دمشق</text><text class="m-sub" x="100" y="152">سوريا</text>
+          <text class="m-lbl" x="46" y="240" text-anchor="middle">رام الله</text><text class="m-sub" x="46" y="256" text-anchor="middle">الضفة الغربية</text>
+          <text class="m-lbl" x="344" y="150">بغداد</text><text class="m-sub" x="344" y="166">العراق</text>
+          <text class="m-lbl" x="332" y="63">أربيل</text><text class="m-sub" x="332" y="79">العراق</text>
+          <text class="m-lbl" x="534" y="366" text-anchor="end">الدوحة</text><text class="m-sub" x="534" y="350" text-anchor="end">قطر</text>
+        </g>
+        </g>
+      </svg>
+      <figcaption><span><span class="en">RRD service network</span><span class="ar">شبكة خدمات RRD</span></span><span>31.95°N 35.93°E</span></figcaption>
+    </figure>
+  </div>
+
+  <section id="about">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="en">About RRD</span><span class="ar">عن الشركة</span></p>
+        <h2><span class="en">One partner from the parlour to the bulk tank.</span><span class="ar">شريك واحد من صالة الحلب حتى خزان التبريد.</span></h2>
+      </div>
+      <p><span class="en">We bring DeLaval's proven technology to farms of every size across the Middle East — from family herds to large commercial dairies — and stay with our customers long after installation.</span><span class="ar">ننقل تقنيات ديلافال المجرّبة إلى المزارع بمختلف أحجامها في الشرق الأوسط، من القطعان العائلية إلى مزارع الألبان التجارية الكبيرة، ونبقى إلى جانب عملائنا بعد التركيب بوقت طويل.</span></p>
+    </div>
+    <div class="about">
+      <div>
+        <h3><span class="en">Genuine equipment</span><span class="ar">معدات أصلية</span></h3>
+        <p><span class="en">Authorized DeLaval supply, with original spare parts and consumables backed by the manufacturer.</span><span class="ar">توريد معتمد من ديلافال، مع قطع غيار ومستهلكات أصلية مدعومة من الشركة المصنّعة.</span></p>
+      </div>
+      <div>
+        <h3><span class="en">Regional reach</span><span class="ar">حضور إقليمي</span></h3>
+        <p><span class="en">From our Amman headquarters we serve six markets with local knowledge of climate, logistics and regulations.</span><span class="ar">من مقرنا في عمّان نخدم ستة أسواق بمعرفة محلية بالمناخ والخدمات اللوجستية والأنظمة.</span></p>
+      </div>
+      <div>
+        <h3><span class="en">Trained technicians</span><span class="ar">فنيون مدرَّبون</span></h3>
+        <p><span class="en">Our service team is trained on DeLaval systems for installation, preventive maintenance and fast repairs.</span><span class="ar">فريق الخدمة لدينا مدرَّب على أنظمة ديلافال للتركيب والصيانة الوقائية والإصلاح السريع.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="en">Solutions</span><span class="ar">الحلول</span></p>
+        <h2><span class="en">Everything a modern dairy runs on.</span><span class="ar">كل ما تحتاجه مزرعة الألبان الحديثة.</span></h2>
+      </div>
+      <p><span class="en">We help you choose the right system for your herd size, barn layout and budget — then install it and keep it running.</span><span class="ar">نساعدك على اختيار النظام المناسب لحجم قطيعك وتصميم الحظيرة وميزانيتك، ثم نركّبه ونحافظ على تشغيله.</span></p>
+    </div>
+    <div class="products">
+      <article class="prod feature">
+        <div class="ph cover"><img src="rotary-platform.jpg" alt="DeLaval rotary milking platform" loading="lazy"></div><div class="pbody">
+        <h3><span class="en">Milking systems</span><span class="ar">أنظمة الحلب</span></h3>
+        <p><span class="en">Parlours, rotaries and voluntary robotic milking for gentle, efficient milking.</span><span class="ar">صالات حلب ومحالب دوّارة وأنظمة حلب آلية (روبوتية) لحلب لطيف وفعّال.</span></p>
+        <ul><li>VMS™</li><li><span class="en">Rotary</span><span class="ar">دوّار</span></li><li><span class="en">Herringbone</span><span class="ar">متوازي مائل</span></li><li><span class="en">Parallel</span><span class="ar">متوازي</span></li></ul>
+      </div></article>
+      <article class="prod feature">
+        <div class="ph contain"><img src="milk-tank.jpg" alt="DeLaval milk cooling tank" loading="lazy"></div><div class="pbody">
+        <h3><span class="en">Milk cooling</span><span class="ar">تبريد الحليب</span></h3>
+        <p><span class="en">Bulk tanks and cooling solutions that protect milk quality in hot regional summers.</span><span class="ar">خزانات تبريد وحلول تحافظ على جودة الحليب في صيف المنطقة الحار.</span></p>
+        <ul><li><span class="en">Bulk tanks</span><span class="ar">خزانات مبرّدة</span></li><li><span class="en">Pre-cooling</span><span class="ar">تبريد أولي</span></li></ul>
+      </div></article>
+      <article class="prod">
+        <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="6" width="26" height="18" rx="2"/><path d="M10 19l5-5 4 3 6-7M13 30h10M18 24v6"/></svg>
+        <h3><span class="en">Herd management</span><span class="ar">إدارة القطيع</span></h3>
+        <p><span class="en">Software and sensors that track yield, health and fertility for every cow.</span><span class="ar">برمجيات وحساسات لمتابعة الإنتاج والصحة والخصوبة لكل بقرة.</span></p>
+        <ul><li>DelPro™</li><li><span class="en">Activity meters</span><span class="ar">مقاييس النشاط</span></li></ul>
+      </article>
+      <article class="prod">
+        <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 4c5 7 9 11 9 16a9 9 0 0 1-18 0c0-5 4-9 9-16z"/><path d="M14 21a4 4 0 0 0 4 4"/></svg>
+        <h3><span class="en">Milking hygiene</span><span class="ar">نظافة الحلب</span></h3>
+        <p><span class="en">Teat care, liners, detergents and filters for healthy udders and clean milk.</span><span class="ar">منتجات العناية بالحلمات والبطانات والمنظفات والفلاتر لضرع سليم وحليب نظيف.</span></p>
+        <ul><li><span class="en">Teat dips</span><span class="ar">مطهرات الحلمات</span></li><li><span class="en">Liners</span><span class="ar">بطانات</span></li><li><span class="en">Detergents</span><span class="ar">منظفات</span></li></ul>
+      </article>
+      <article class="prod">
+        <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 30V14l13-8 13 8v16"/><path d="M11 30V19h14v11M11 24h14"/></svg>
+        <h3><span class="en">Animal comfort</span><span class="ar">راحة الحيوان</span></h3>
+        <p><span class="en">Cow brushes, stalls, mats and cooling for calmer cows and higher yields.</span><span class="ar">فرش الأبقار والحواجز والفرشات وأنظمة التبريد لأبقار أهدأ وإنتاج أعلى.</span></p>
+        <ul><li><span class="en">Swinging brushes</span><span class="ar">فرش دوّارة</span></li><li><span class="en">Stalls &amp; mats</span><span class="ar">حواجز وفرشات</span></li></ul>
+      </article>
+      <article class="prod">
+        <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 30h20M10 30V16h16v14M14 16V8h8v8"/><path d="M14 23h8"/></svg>
+        <h3><span class="en">Feeding &amp; calf care</span><span class="ar">التغذية ورعاية العجول</span></h3>
+        <p><span class="en">Feeding equipment and calf-rearing solutions for a strong start and steady growth.</span><span class="ar">معدات التغذية وحلول تربية العجول لبداية قوية ونمو منتظم.</span></p>
+        <ul><li><span class="en">Calf feeders</span><span class="ar">مغذيات العجول</span></li><li><span class="en">Feed pushers</span><span class="ar">دافعات العلف</span></li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="parlours">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="en">Milking parlours</span><span class="ar">صالات الحلب</span></p>
+        <h2><span class="en">Rotary parlours for herds that keep growing.</span><span class="ar">محالب دوّارة لقطعان تكبر باستمرار.</span></h2>
+      </div>
+      <p><span class="en">On a rotary, cows step onto a slowly turning platform, are prepped and attached at one fixed point, milk during one turn, and walk off where they came in. Your milkers stay in place while the herd comes to them.</span><span class="ar">في المحلب الدوّار تصعد الأبقار إلى منصة تدور ببطء، ويتم تجهيزها وتركيب وحدات الحلب في نقطة ثابتة، وتُحلب خلال دورة واحدة، ثم تخرج من حيث دخلت. يبقى العاملون في مكانهم بينما يأتي القطيع إليهم.</span></p>
+    </div>
+
+    <figure class="rot-photo">
+      <img src="rotary-milking.jpg" alt="Cows being milked on a DeLaval rotary parlour" loading="lazy">
+      <figcaption><span class="en">A DeLaval rotary parlour in operation: every cow is milked in a single turn of the platform.</span><span class="ar">محلب ديلافال دوّار أثناء التشغيل: تُحلب كل بقرة خلال دورة واحدة للمنصة.</span></figcaption>
+    </figure>
+
+    <div class="rotary">
+      <div class="rot-stage">
+        <span class="rot-note"><span class="en">Animation shown 30× faster</span><span class="ar">الحركة أسرع 30 مرة</span></span>
+        <svg id="rotSvg" viewBox="-250 -250 500 500" role="img" aria-label="Top view of a rotary milking parlour turning, with entry, attach, milking, teat spray and exit zones">
+          <defs><marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--wheat)"/></marker></defs>
+          <g id="phases"></g>
+          <circle class="r-plat" r="172"/>
+          <g id="deck"></g>
+          <circle class="r-hub" r="80"/>
+          <text class="r-big" id="hubNum" text-anchor="middle" y="8">300</text>
+          <text class="r-small" text-anchor="middle" y="28"><tspan class="en">cows / hour</tspan><tspan class="ar">بقرة / ساعة</tspan></text>
+          <g id="lanes"></g>
+          <g id="labels"></g>
+        </svg>
+        <div class="legend">
+          <span><i style="background:var(--wheat)"></i><span class="en">Prep &amp; attach</span><span class="ar">التجهيز والتركيب</span></span>
+          <span><i style="background:var(--river)"></i><span class="en">Milking</span><span class="ar">الحلب</span></span>
+          <span><i style="background:var(--ink);opacity:.45"></i><span class="en">Detach &amp; teat spray</span><span class="ar">الفك ورش الحلمات</span></span>
+        </div>
+      </div>
+
+      <div class="calc">
+        <h3><span class="en">How many cows per hour?</span><span class="ar">كم بقرة في الساعة؟</span></h3>
+        <p><span class="en">Move the sliders to size a rotary for your farm. The platform on the left redraws as you go.</span><span class="ar">حرّك المؤشرات لتحديد حجم المحلب الدوّار المناسب لمزرعتك. يتغير رسم المنصة مباشرة.</span></p>
+        <div class="slider">
+          <div class="top"><label for="s-stalls"><span class="en">Stalls on the platform</span><span class="ar">عدد المواقع على المنصة</span></label><output id="o-stalls">40</output></div>
+          <input type="range" id="s-stalls" min="24" max="80" step="4" value="40">
+        </div>
+        <div class="slider">
+          <div class="top"><label for="s-rot"><span class="en">Minutes per rotation</span><span class="ar">دقائق لكل دورة</span></label><output id="o-rot">8.0</output></div>
+          <input type="range" id="s-rot" min="6" max="12" step="0.5" value="8">
+        </div>
+        <div class="slider">
+          <div class="top"><label for="s-herd"><span class="en">Cows to milk</span><span class="ar">عدد الأبقار الحلوب</span></label><output id="o-herd">1,200</output></div>
+          <input type="range" id="s-herd" min="200" max="5000" step="100" value="1200">
+        </div>
+        <div class="results">
+          <div><b id="res-cph">300</b><span><span class="en">cows per hour</span><span class="ar">بقرة في الساعة</span></span></div>
+          <div><b id="res-time">4.0 h</b><span><span class="en">per milking session</span><span class="ar">لكل جلسة حلب</span></span></div>
+        </div>
+        <p class="fine"><span class="en">Theoretical figures: stalls × 60 ÷ minutes per rotation, excluding washing and changeover. Our team will size your real parlour after a farm visit.</span><span class="ar">أرقام نظرية: عدد المواقع × 60 ÷ دقائق الدورة، دون احتساب الغسيل والتبديل. يحدد فريقنا الحجم الفعلي بعد زيارة المزرعة.</span></p>
+        <a class="btn primary" href="#contact" style="justify-self:start"><span class="en">Plan my rotary</span><span class="ar">خطط لمحلبي الدوّار</span></a>
+      </div>
+    </div>
+
+    <div class="ptypes">
+      <article class="ptype">
+        <div class="pic">
+          <img src="parallel.jpg" alt="Cows in a DeLaval parallel milking parlour" loading="lazy" class="cover">
+        </div>
+        <div class="body">
+          <span class="fit"><span class="en">Medium to large herds</span><span class="ar">قطعان متوسطة إلى كبيرة</span></span>
+          <h3><span class="en">Parallel parlour</span><span class="ar">محلب متوازي</span></h3>
+          <p><span class="en">Cows stand side by side, and the operator attaches units from behind, between the hind legs. Compact, fast and safe for your staff.</span><span class="ar">تقف الأبقار جنباً إلى جنب ويركّب العامل وحدات الحلب من الخلف بين الأرجل الخلفية. تصميم مدمج وسريع وآمن للعاملين.</span></p>
+        </div>
+      </article>
+      <article class="ptype">
+        <div class="pic">
+          <img src="herringbone.jpg" alt="A DeLaval herringbone milking parlour" loading="lazy" class="cover">
+        </div>
+        <div class="body">
+          <span class="fit"><span class="en">Small to medium herds</span><span class="ar">قطعان صغيرة إلى متوسطة</span></span>
+          <h3><span class="en">Herringbone parlour</span><span class="ar">محلب متوازي مائل (هيرنغ بون)</span></h3>
+          <p><span class="en">Cows stand at an angle, so the operator gets a clear side view of the udder. A proven, flexible layout that is easy to expand.</span><span class="ar">تقف الأبقار بزاوية مائلة فيرى العامل الضرع بوضوح من الجانب. تصميم مجرّب ومرن وسهل التوسعة.</span></p>
+        </div>
+      </article>
+      <article class="ptype">
+        <div class="pic">
+          <img src="vms.jpg" alt="DeLaval VMS robotic milking system" loading="lazy" class="contain">
+        </div>
+        <div class="body">
+          <span class="fit"><span class="en">Voluntary milking</span><span class="ar">حلب طوعي</span></span>
+          <h3><span class="en">Robotic milking (VMS™)</span><span class="ar">الحلب الآلي (VMS™)</span></h3>
+          <p><span class="en">Cows choose when to be milked, and the robot arm attaches automatically. Less labour and more data on every cow.</span><span class="ar">تختار الأبقار وقت الحلب ويقوم الذراع الآلي بالتركيب تلقائياً. عمالة أقل وبيانات أكثر عن كل بقرة.</span></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="gallery" id="gallery" hidden></div>
+  </section>
+
+  <section id="financing">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="en">Project financing</span><span class="ar">تمويل المشاريع</span></p>
+        <h2><span class="en">Leasing and monthly payment options.</span><span class="ar">خيارات التأجير والدفع الشهري.</span></h2>
+      </div>
+      <p><span class="en">Where applicable, RRD can offer leasing or monthly payments for your project. All financing is subject to case review and credit history.</span><span class="ar">حيثما ينطبق، يمكن لـ RRD توفير التأجير التمويلي أو الدفعات الشهرية لمشروعك. يخضع أي تمويل لدراسة الحالة والسجل الائتماني.</span></p>
+    </div>
+
+    <div class="fin">
+      <article class="scheme">
+        <span class="kind"><span class="en">Where applicable</span><span class="ar">حيثما ينطبق</span></span>
+        <h3><span class="en">Leasing</span><span class="ar">التأجير التمويلي</span></h3>
+        <p><span class="en">Use the equipment on a leasing agreement and pay over an agreed period, with the option to own it at the end of the lease.</span><span class="ar">استخدم المعدات بموجب عقد تأجير وسدّد على فترة متفق عليها، مع إمكانية تملّكها في نهاية العقد.</span></p>
+        <ul><li><span class="en">Lower upfront investment</span><span class="ar">استثمار أولي أقل</span></li><li><span class="en">Fixed, predictable lease payments</span><span class="ar">دفعات إيجار ثابتة ومعروفة مسبقاً</span></li></ul>
+      </article>
+      <article class="scheme">
+        <span class="kind"><span class="en">Where applicable</span><span class="ar">حيثما ينطبق</span></span>
+        <h3><span class="en">Monthly payments</span><span class="ar">الدفعات الشهرية</span></h3>
+        <p><span class="en">Pay a down payment, then spread the balance over monthly instalments for an agreed term.</span><span class="ar">ادفع دفعة أولى، ثم قسّط المبلغ المتبقي على دفعات شهرية لمدة متفق عليها.</span></p>
+        <ul><li><span class="en">Down payment and term agreed per project</span><span class="ar">الدفعة الأولى والمدة تُحددان لكل مشروع</span></li><li><span class="en">Repayments spread over the agreed term</span><span class="ar">السداد موزّع على المدة المتفق عليها</span></li></ul>
+      </article>
+      <article class="scheme review">
+        <span class="kind r"><span class="en">Eligibility</span><span class="ar">الأهلية</span></span>
+        <h3><span class="en">Subject to review</span><span class="ar">وفق دراسة الطلب</span></h3>
+        <p><span class="en">Every financing request is assessed case by case. Approval, terms and amounts depend on:</span><span class="ar">تتم دراسة كل طلب تمويل على حدة. تعتمد الموافقة والشروط والمبالغ على:</span></p>
+        <ul><li><span class="en">Review of your project and farm</span><span class="ar">دراسة المشروع والمزرعة</span></li><li><span class="en">Your credit history</span><span class="ar">السجل الائتماني</span></li><li><span class="en">Supporting documents</span><span class="ar">المستندات الداعمة</span></li></ul>
+      </article>
+    </div>
+
+    <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+      <a class="btn primary" href="#contact"><span class="en">Apply for review</span><span class="ar">قدّم طلب دراسة</span></a>
+      <span style="color:var(--muted);font-size:14px"><span class="en">Choose "Leasing / monthly payments" in the request form.</span><span class="ar">اختر "التأجير أو الدفع الشهري" في نموذج الطلب.</span></span>
+    </div>
+  </section>
+
+  <section id="service">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="en">Service &amp; support</span><span class="ar">الخدمة والدعم</span></p>
+        <h2><span class="en">How we work with your farm.</span><span class="ar">كيف نعمل مع مزرعتك.</span></h2>
+      </div>
+      <p><span class="en">Equipment is only as good as the support behind it. Every project follows the same path, from the first farm visit to scheduled maintenance.</span><span class="ar">قيمة المعدات بقدر الدعم الذي يقف خلفها. كل مشروع يمر بالمراحل نفسها، من الزيارة الأولى للمزرعة حتى الصيانة الدورية.</span></p>
+    </div>
+    <div class="service">
+      <div class="step"><span class="n">01</span><h3><span class="en">Farm assessment</span><span class="ar">تقييم المزرعة</span></h3><p><span class="en">We visit, study your herd and barn, and design the right solution.</span><span class="ar">نزور المزرعة وندرس القطيع والحظيرة ونصمّم الحل المناسب.</span></p></div>
+      <div class="step"><span class="n">02</span><h3><span class="en">Supply &amp; installation</span><span class="ar">التوريد والتركيب</span></h3><p><span class="en">We deliver, install and commission the equipment on site.</span><span class="ar">نورّد المعدات ونركّبها ونشغّلها في الموقع.</span></p></div>
+      <div class="step"><span class="n">03</span><h3><span class="en">Training</span><span class="ar">التدريب</span></h3><p><span class="en">Your team learns to operate, clean and get the most from the system.</span><span class="ar">يتعلم فريقك تشغيل النظام وتنظيفه والاستفادة القصوى منه.</span></p></div>
+      <div class="step"><span class="n">04</span><h3><span class="en">Maintenance &amp; parts</span><span class="ar">الصيانة وقطع الغيار</span></h3><p><span class="en">Preventive service visits and genuine spare parts keep you milking.</span><span class="ar">زيارات صيانة وقائية وقطع غيار أصلية لضمان استمرار الحلب.</span></p></div>
+    </div>
+  </section>
+
+  <section id="coverage">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow"><span class="en">Coverage</span><span class="ar">مناطق التغطية</span></p>
+        <h2><span class="en">Six markets, one team.</span><span class="ar">ستة أسواق، فريق واحد.</span></h2>
+      </div>
+      <p><span class="en">RRD is the DeLaval dealer for the following countries. Contact our Amman headquarters for sales and service anywhere in the region.</span><span class="ar">شركة RRD هي وكيل ديلافال في الدول التالية. تواصل مع مقرنا في عمّان للمبيعات والخدمة في أي مكان في المنطقة.</span></p>
+    </div>
+    <div class="countries">
+      <div class="country hq"><span class="code">JO</span><h3><span class="en">Jordan</span><span class="ar">الأردن</span></h3><span class="city"><span class="en">Amman</span><span class="ar">عمّان</span></span><span class="tag"><span class="en">Headquarters</span><span class="ar">المقر الرئيسي</span></span></div>
+      <div class="country"><span class="code">IQ</span><h3><span class="en">Iraq</span><span class="ar">العراق</span></h3><span class="city"><span class="en">Baghdad · Erbil</span><span class="ar">بغداد · أربيل</span></span><span class="tag"><span class="en">Sales &amp; service</span><span class="ar">مبيعات وخدمة</span></span></div>
+      <div class="country"><span class="code">SY</span><h3><span class="en">Syria</span><span class="ar">سوريا</span></h3><span class="city"><span class="en">Damascus</span><span class="ar">دمشق</span></span><span class="tag"><span class="en">Sales &amp; service</span><span class="ar">مبيعات وخدمة</span></span></div>
+      <div class="country"><span class="code">LB</span><h3><span class="en">Lebanon</span><span class="ar">لبنان</span></h3><span class="city"><span class="en">Beirut</span><span class="ar">بيروت</span></span><span class="tag"><span class="en">Sales &amp; service</span><span class="ar">مبيعات وخدمة</span></span></div>
+      <div class="country"><span class="code">PS</span><h3><span class="en">West Bank</span><span class="ar">الضفة الغربية</span></h3><span class="city"><span class="en">Ramallah</span><span class="ar">رام الله</span></span><span class="tag"><span class="en">Sales &amp; service</span><span class="ar">مبيعات وخدمة</span></span></div>
+      <div class="country"><span class="code">QA</span><h3><span class="en">Qatar</span><span class="ar">قطر</span></h3><span class="city"><span class="en">Doha</span><span class="ar">الدوحة</span></span><span class="tag"><span class="en">Sales &amp; service</span><span class="ar">مبيعات وخدمة</span></span></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="info">
+        <div>
+          <p class="eyebrow"><span class="en">Contact</span><span class="ar">اتصل بنا</span></p>
+          <h2 style="font-size:clamp(28px,3.6vw,40px);margin-top:10px"><span class="en">Talk to our team in Amman.</span><span class="ar">تحدّث مع فريقنا في عمّان.</span></h2>
+        </div>
+        <dl id="contactList">
+          <div><dt><span class="en">Head office</span><span class="ar">المكتب الرئيسي</span></dt><dd><span class="en">Amman, Jordan</span><span class="ar">عمّان، الأردن</span> <span class="ph">— <span class="en">street address</span><span class="ar">العنوان</span></span></dd></div>
+          <div><dt><span class="en">Phone</span><span class="ar">الهاتف</span></dt><dd dir="ltr" style="text-align:start"><a href="tel:+962775111552" style="color:inherit;text-decoration:none">+962 77 511 1552</a></dd></div>
+          <div><dt><span class="en">Email</span><span class="ar">البريد الإلكتروني</span></dt><dd><span id="emailAddr">info@rrdjo.com</span></dd></div>
+          <div><dt><span class="en">Working hours</span><span class="ar">ساعات العمل</span></dt><dd><span class="en">Sunday – Thursday</span><span class="ar">الأحد – الخميس</span></dd></div>
+        </dl>
+      </div>
+
+      <form id="quoteForm" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="quote">
+        <p hidden><label>Leave empty <input name="bot-field"></label></p>
+        <h3 style="font-size:20px"><span class="en">Request a quote</span><span class="ar">طلب عرض سعر</span></h3>
+        <div class="row">
+          <label for="f-name"><span><span class="en">Full name</span><span class="ar">الاسم الكامل</span></span><input id="f-name" name="name" required autocomplete="name"></label>
+          <label for="f-farm"><span><span class="en">Farm / company</span><span class="ar">المزرعة / الشركة</span></span><input id="f-farm" name="farm" autocomplete="organization"></label>
+        </div>
+        <div class="row">
+          <label for="f-phone"><span><span class="en">Phone</span><span class="ar">الهاتف</span></span><input id="f-phone" name="phone" type="tel" dir="ltr" autocomplete="tel" required></label>
+          <label for="f-country"><span><span class="en">Country</span><span class="ar">الدولة</span></span>
+            <select id="f-country" name="country">
+              <option value="Jordan">Jordan / الأردن</option>
+              <option value="Iraq">Iraq / العراق</option>
+              <option value="Syria">Syria / سوريا</option>
+              <option value="Lebanon">Lebanon / لبنان</option>
+              <option value="West Bank">West Bank / الضفة الغربية</option>
+              <option value="Qatar">Qatar / قطر</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label for="f-herd"><span><span class="en">Herd size (cows)</span><span class="ar">حجم القطيع (رأس)</span></span><input id="f-herd" name="herd" type="number" min="1" inputmode="numeric"></label>
+          <label for="f-interest"><span><span class="en">Interested in</span><span class="ar">مهتم بـ</span></span>
+            <select id="f-interest" name="interest">
+              <option>Milking systems / أنظمة الحلب</option>
+              <option>Milk cooling / تبريد الحليب</option>
+              <option>Herd management / إدارة القطيع</option>
+              <option>Hygiene &amp; consumables / النظافة والمستهلكات</option>
+              <option>Animal comfort / راحة الحيوان</option>
+              <option>Service &amp; spare parts / الصيانة وقطع الغيار</option>
+              <option>Leasing / monthly payments / التأجير أو الدفع الشهري</option>
+            </select>
+          </label>
+        </div>
+        <label for="f-msg"><span><span class="en">Message</span><span class="ar">الرسالة</span></span><textarea id="f-msg" name="message"></textarea></label>
+        <button class="btn primary" type="submit" style="justify-self:start"><span class="en">Send request</span><span class="ar">أرسل الطلب</span></button>
+        <p id="formErr" hidden style="color:#B3412E;font-size:14px"><span class="en">Please add your name and phone number.</span><span class="ar">يرجى إدخال الاسم ورقم الهاتف.</span></p>
+        <div class="out" id="sent" hidden>
+          <p><b><span class="en">Thank you. Your request has been sent.</span><span class="ar">شكراً لك. تم إرسال طلبك.</span></b> <span class="en">Our team will contact you soon.</span><span class="ar">سيتواصل معك فريقنا قريباً.</span></p>
+        </div>
+        <div class="out" id="out" hidden>
+          <p><span class="en">Your request is ready. Copy it and send it to info@rrdjo.com.</span><span class="ar">طلبك جاهز. انسخه وأرسله إلى info@rrdjo.com.</span></p>
+          <pre id="outText"></pre>
+          <button class="btn ghost" type="button" id="copyBtn" style="justify-self:start"><span class="en">Copy request</span><span class="ar">نسخ الطلب</span></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="yr">2026</span> <span class="en">Rhine River Distribution Co. (RRD) · Amman, Jordan</span><span class="ar">شركة نهر الراين للتوزيع (RRD) · عمّان، الأردن</span></span>
+  <span><span class="en">DeLaval is a trademark of the DeLaval Group. RRD is an authorized dealer.</span><span class="ar">ديلافال علامة تجارية لمجموعة ديلافال. RRD وكيل معتمد.</span></span>
+</footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('langBtn');
+  function setLang(l){
+    root.lang=l; root.dir=(l==='ar')?'rtl':'ltr';
+    btn.textContent=(l==='ar')?'English':'العربية';
+    try{localStorage.setItem('rrd-lang',l)}catch(e){}
+  }
+  var saved='en'; try{saved=localStorage.getItem('rrd-lang')||'en'}catch(e){}
+  setLang(saved);
+  btn.addEventListener('click',function(){setLang(root.lang==='ar'?'en':'ar')});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  var form=document.getElementById('quoteForm'), out=document.getElementById('out'), outText=document.getElementById('outText'), err=document.getElementById('formErr');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(form);
+    if(!String(d.get('name')).trim()||!String(d.get('phone')).trim()){err.hidden=false;out.hidden=true;return;}
+    err.hidden=true;
+    outText.textContent=[
+      'Quote request — RRD',
+      'Name: '+d.get('name'),
+      'Farm/company: '+(d.get('farm')||'-'),
+      'Phone: '+d.get('phone'),
+      'Country: '+d.get('country'),
+      'Herd size: '+(d.get('herd')||'-'),
+      'Interested in: '+d.get('interest'),
+      'Message: '+(d.get('message')||'-')
+    ].join('\n');
+    var sent=document.getElementById('sent');
+    var live=/^https?:$/.test(location.protocol) && !/claude|localhost|127\.0\.0\.1/.test(location.hostname);
+    if(live){
+      fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(d).toString()})
+        .then(function(r){ if(r.ok){sent.hidden=false;out.hidden=true;form.reset();} else {out.hidden=false;} })
+        .catch(function(){out.hidden=false;});
+    } else { out.hidden=false; }
+  });
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    var t=outText.textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(outText);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+    try{navigator.clipboard.writeText(t).then(function(){},sel)}catch(e){sel()}
+  });
+})();
+
+/* ---------- Rotary parlour + animations ---------- */
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+  function pt(r,a){var t=a*Math.PI/180;return [r*Math.sin(t),-r*Math.cos(t)];}
+  function arc(r,a0,a1){var p0=pt(r,a0),p1=pt(r,a1),large=((a1-a0+360)%360)>180?1:0;return 'M'+p0[0].toFixed(1)+' '+p0[1].toFixed(1)+' A'+r+' '+r+' 0 '+large+' 1 '+p1[0].toFixed(1)+' '+p1[1].toFixed(1);}
+  function bilabel(parent,x,y,anchor,en,ar){
+    var t=el('text',{x:x,y:y,'text-anchor':anchor,'class':'r-lbl'},parent);
+    var a=el('tspan',{'class':'en'},t);a.textContent=en;
+    var b=el('tspan',{'class':'ar'},t);b.textContent=ar;
+  }
+
+  // zones (degrees clockwise from top; platform turns clockwise)
+  var ATT0=212, MILK0=250, MILK1=138, SPR1=175;
+  var ph=document.getElementById('phases');
+  el('path',{d:arc(186,ATT0,MILK0),'class':'r-phase',stroke:'var(--wheat)'},ph);
+  el('path',{d:arc(186,MILK0,MILK1),'class':'r-phase',stroke:'var(--river)'},ph);
+  el('path',{d:arc(186,MILK1,SPR1),'class':'r-phase',stroke:'var(--ink)',opacity:'.45'},ph);
+
+  var lanes=document.getElementById('lanes');
+  var e0=pt(238,203),e1=pt(178,203);el('path',{d:'M'+e0+' L'+e1,'class':'r-lane'},lanes);
+  var x0=pt(178,184),x1=pt(238,184);el('path',{d:'M'+x0+' L'+x1,'class':'r-lane'},lanes);
+
+  var L=document.getElementById('labels');
+  var p;
+  p=pt(212,212);bilabel(L,p[0]-4,p[1]+8,'end','Entry','الدخول');
+  p=pt(212,178);bilabel(L,p[0]+6,p[1]+8,'start','Exit','الخروج');
+  p=pt(206,236);bilabel(L,p[0]-4,p[1],'end','Attach','التركيب');
+  p=pt(200,0);bilabel(L,p[0],p[1]-4,'middle','Milking','الحلب');
+  p=pt(206,152);bilabel(L,p[0]+4,p[1]+4,'start','Teat spray','رش الحلمات');
+
+  var deck=document.getElementById('deck'), cows=[], rot=0;
+  var sSt=document.getElementById('s-stalls'), sRot=document.getElementById('s-rot'), sHerd=document.getElementById('s-herd');
+
+  function build(n){
+    while(deck.firstChild)deck.removeChild(deck.firstChild);
+    cows=[];
+    var step=360/n, arcLen=2*Math.PI*128/n, w=Math.min(12,arcLen*0.36);
+    for(var i=0;i<n;i++){
+      var a=i*step;
+      el('line',{x1:0,y1:-84,x2:0,y2:-170,'class':'r-div',transform:'rotate('+(a+step/2)+')'},deck);
+      var g=el('g',{transform:'rotate('+a+')'},deck);
+      el('ellipse',{cx:0,cy:-128,rx:w.toFixed(2),ry:32,'class':'r-cow'},g);
+      el('ellipse',{cx:0,cy:-89,rx:(w*0.62).toFixed(2),ry:8,'class':'r-cow'},g);
+      if(i%2===0)el('ellipse',{cx:(w*0.25).toFixed(2),cy:-136,rx:(w*0.5).toFixed(2),ry:9,'class':'r-spot'},g);
+      else el('ellipse',{cx:(-w*0.25).toFixed(2),cy:-118,rx:(w*0.45).toFixed(2),ry:7,'class':'r-spot'},g);
+      var c=el('circle',{cx:0,cy:-164,r:Math.min(4.5,w*0.5).toFixed(2),'class':'r-cluster'},g);
+      cows.push({a:a,c:c});
+    }
+    paint();
+  }
+  function inMilk(w){return w>=MILK0||w<MILK1;}
+  function paint(){
+    deck.setAttribute('transform','rotate('+rot.toFixed(2)+')');
+    for(var i=0;i<cows.length;i++){
+      var w=(cows[i].a+rot)%360;
+      cows[i].c.style.display=inMilk(w)?'':'none';
+    }
+  }
+  function fmt(n){return n.toLocaleString('en-US');}
+  function calc(){
+    var n=+sSt.value, m=+sRot.value, herd=+sHerd.value;
+    var cph=Math.round(n*60/m), hrs=herd/cph;
+    document.getElementById('o-stalls').textContent=n;
+    document.getElementById('o-rot').textContent=m.toFixed(1);
+    document.getElementById('o-herd').textContent=fmt(herd);
+    document.getElementById('res-cph').textContent=fmt(cph);
+    document.getElementById('hubNum').textContent=fmt(cph);
+    document.getElementById('res-time').textContent=hrs.toFixed(1)+' h';
+  }
+  sSt.addEventListener('input',function(){build(+sSt.value);calc();});
+  sRot.addEventListener('input',calc);
+  sHerd.addEventListener('input',calc);
+  build(+sSt.value);calc();
+
+  var last=null;
+  function tick(ts){
+    if(last!=null){
+      var dt=Math.min(0.1,(ts-last)/1000);
+      rot=(rot+dt*360/(+sRot.value*60)*30)%360;
+      paint();
+    }
+    last=ts;requestAnimationFrame(tick);
+  }
+  if(!reduce)requestAnimationFrame(tick); else {rot=20;paint();}
+
+  // small parlour line-ups
+  function lineup(id,angle){
+    var g=document.getElementById(id);
+    for(var i=0;i<10;i++){
+      var x=33+i*26;
+      [[48,-1],[142,1]].forEach(function(r){
+        var cg=el('g',{transform:'translate('+x+' '+r[0]+') rotate('+(angle*r[1])+')'},g);
+        el('ellipse',{cx:0,cy:0,rx:9,ry:27,'class':'p-cow'},cg);
+        el('ellipse',{cx:0,cy:-33*r[1],rx:6,ry:7,'class':'p-cow'},cg);
+        el('ellipse',{cx:2,cy:6*r[1],rx:5,ry:8,fill:'#0B2A55'},cg);
+      });
+    }
+  }
+
+
+  // Photo gallery: add entries like {src:'photos/rotary-1.jpg', en:'…', ar:'…'}
+  var PHOTOS=[];
+  if(PHOTOS.length){
+    var gal=document.getElementById('gallery');
+    PHOTOS.forEach(function(p){
+      var f=document.createElement('figure');
+      f.innerHTML='<img loading="lazy" alt="'+p.en+'" src="'+p.src+'"><figcaption><span class="en">'+p.en+'</span><span class="ar">'+p.ar+'</span></figcaption>';
+      gal.appendChild(f);
+    });
+    gal.hidden=false;
+  }
+
+  // map trucks respect reduced motion
+  if(reduce){var ms=document.querySelector('.map svg');if(ms&&ms.pauseAnimations)ms.pauseAnimations();}
+
+  // scroll reveal (content is visible at rest; only animates as it enters)
+  var items=document.querySelectorAll('.sec-head,.about > div,.prod,.rot-photo,.step,.country,.ptype,.rot-stage,.calc,.scheme');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(it){it.setAttribute('data-reveal','');io.observe(it);});
+  }
+})();
+</script>
+<script>
+/* ---------- Editable content: everything below is filled from content/site.json ---------- */
+(function(){
+  if(!/^https?:$/.test(location.protocol)) return;
+  var ICONS={
+    milking:'<rect x="5" y="8" width="26" height="20" rx="3"/><path d="M11 28v4M25 28v4M12 15h12M12 21h7"/>',
+    cooling:'<ellipse cx="18" cy="12" rx="12" ry="5"/><path d="M6 12v12c0 3 5 5 12 5s12-2 12-5V12"/><path d="M18 17v7M15 21l3 3 3-3"/>',
+    herd:'<rect x="5" y="6" width="26" height="18" rx="2"/><path d="M10 19l5-5 4 3 6-7M13 30h10M18 24v6"/>',
+    hygiene:'<path d="M18 4c5 7 9 11 9 16a9 9 0 0 1-18 0c0-5 4-9 9-16z"/><path d="M14 21a4 4 0 0 0 4 4"/>',
+    comfort:'<path d="M5 30V14l13-8 13 8v16"/><path d="M11 30V19h14v11M11 24h14"/>',
+    feeding:'<path d="M8 30h20M10 30V16h16v14M14 16V8h8v8"/><path d="M14 23h8"/>'
+  };
+  function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function bi(o){o=o||{};return '<span class="en">'+esc(o.en)+'</span><span class="ar">'+esc(o.ar||o.en)+'</span>';}
+  function $(q,r){return (r||document).querySelector(q);}
+  function set(q,o){var e=$(q);if(e&&o)e.innerHTML=bi(o);}
+  function img(src){return esc(String(src||'').replace(/^\//,''));}
+  function head(id,c){
+    var h=$('#'+id+' .sec-head'); if(!h||!c) return;
+    set('#'+id+' .sec-head .eyebrow',c.eyebrow); set('#'+id+' .sec-head h2',c.title);
+    var p=h.querySelector('p:not(.eyebrow)'); if(p) p.innerHTML=bi(c.intro);
+  }
+  function render(C){
+    var h=C.hero;
+    if(h){
+      set('.hero .eyebrow',h.eyebrow);
+      $('.hero h1').innerHTML='<span class="en">'+esc(h.title.en)+' <em>'+esc(h.highlight.en)+'</em></span><span class="ar">'+esc(h.title.ar)+' <em>'+esc(h.highlight.ar)+'</em></span>';
+      set('.hero .lede',h.intro);
+      $('.hero .dealer').innerHTML='<span class="dot"></span>'+bi(h.hq_line);
+    }
+    if(C.about){ head('about',C.about);
+      $('#about .about').innerHTML=(C.about.items||[]).map(function(i){return '<div><h3>'+bi(i.title)+'</h3><p>'+bi(i.text)+'</p></div>';}).join(''); }
+    if(C.products){ head('products',C.products);
+      $('#products .products').innerHTML=(C.products.items||[]).map(function(i){
+        var tags='<ul>'+(i.tags||[]).map(function(t){return '<li>'+bi(t)+'</li>';}).join('')+'</ul>';
+        var body='<h3>'+bi(i.title)+'</h3><p>'+bi(i.text)+'</p>'+tags;
+        if(i.image) return '<article class="prod feature"><div class="ph '+(i.image_fit==='contain'?'contain':'cover')+'"><img src="'+img(i.image)+'" alt="'+esc(i.title.en)+'" loading="lazy"></div><div class="pbody">'+body+'</div></article>';
+        return '<article class="prod"><svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">'+(ICONS[i.icon]||ICONS.milking)+'</svg>'+body+'</article>';
+      }).join(''); }
+    if(C.parlours){ var P=C.parlours; head('parlours',P);
+      var rp=$('.rot-photo');
+      if(rp){ if(P.photo){rp.hidden=false;rp.querySelector('img').src=img(P.photo);rp.querySelector('figcaption').innerHTML=bi(P.photo_caption);} else rp.hidden=true; }
+      $('.ptypes').innerHTML=(P.types||[]).map(function(t){
+        return '<article class="ptype"><div class="pic">'+(t.image?'<img src="'+img(t.image)+'" alt="'+esc(t.title.en)+'" loading="lazy" class="'+(t.image_fit==='contain'?'contain':'cover')+'">':'')+'</div><div class="body"><span class="fit">'+bi(t.label)+'</span><h3>'+bi(t.title)+'</h3><p>'+bi(t.text)+'</p></div></article>';
+      }).join(''); }
+    var g=$('#gallery');
+    if(g){ var G=(C.gallery||[]).filter(function(x){return x&&x.image;});
+      g.innerHTML=G.map(function(x){return '<figure><img loading="lazy" src="'+img(x.image)+'" alt="'+esc((x.caption||{}).en)+'"><figcaption>'+bi(x.caption)+'</figcaption></figure>';}).join('');
+      g.hidden=!G.length; }
+    if(C.financing){ head('financing',C.financing);
+      $('#financing .fin').innerHTML=(C.financing.options||[]).map(function(o){
+        return '<article class="scheme'+(o.highlight?' review':'')+'"><span class="kind'+(o.highlight?' r':'')+'">'+bi(o.badge)+'</span><h3>'+bi(o.title)+'</h3><p>'+bi(o.text)+'</p><ul>'+(o.points||[]).map(function(p){return '<li>'+bi(p)+'</li>';}).join('')+'</ul></article>';
+      }).join(''); }
+    if(C.service){ head('service',C.service);
+      $('#service .service').innerHTML=(C.service.steps||[]).map(function(st,i){
+        return '<div class="step"><span class="n">'+String(i+1).padStart(2,'0')+'</span><h3>'+bi(st.title)+'</h3><p>'+bi(st.text)+'</p></div>';
+      }).join(''); }
+    if(C.coverage){ var V=C.coverage; head('coverage',V);
+      var cs=V.countries||[];
+      $('#coverage .countries').innerHTML=cs.map(function(c){
+        return '<div class="country'+(c.headquarters?' hq':'')+'"><span class="code">'+esc(c.code)+'</span><h3>'+bi(c.name)+'</h3><span class="city">'+bi(c.cities)+'</span><span class="tag">'+bi(c.tag)+'</span></div>';
+      }).join('');
+      var n=cs.length; $('#coverage .countries').style.gridTemplateColumns=n>=5&&innerWidth>1000?'repeat('+Math.min(n,6)+',1fr)':'';
+      var sel=$('#f-country'); if(sel&&cs.length) sel.innerHTML=cs.map(function(c){return '<option value="'+esc(c.name.en)+'">'+esc(c.name.en)+' / '+esc(c.name.ar)+'</option>';}).join('');
+      renderMap(V.map||[]);
+      var lede=V.countries; }
+    if(C.contact){ var K=C.contact;
+      set('#contact .eyebrow',K.eyebrow); set('#contact h2',K.title);
+      var tel=String(K.phone||'').replace(/[^\d+]/g,'').replace(/^00/,'+');
+      var rows=[
+        [{en:'Head office',ar:'المكتب الرئيسي'},bi(K.address)],
+        [{en:'Phone',ar:'الهاتف'},'<a dir="ltr" href="tel:'+esc(tel)+'" style="color:inherit;text-decoration:none">'+esc(K.phone)+'</a>'],
+        [{en:'Email',ar:'البريد الإلكتروني'},'<span dir="ltr">'+esc(K.email)+'</span>'],
+        [{en:'Working hours',ar:'ساعات العمل'},bi(K.hours)]];
+      $('#contactList').innerHTML=rows.map(function(r){return '<div><dt>'+bi(r[0])+'</dt><dd>'+r[1]+'</dd></div>';}).join('');
+      var fn=$('#formNote'); if(!fn){fn=document.createElement('p');fn.id='formNote';fn.className='fine';fn.style.cssText='font-size:13px;color:var(--muted);margin:0';var btn=$('#quoteForm button[type=submit]');btn.parentNode.insertBefore(fn,btn.nextSibling);} fn.innerHTML=(K.form_note&&K.form_note.en)?bi(K.form_note):'';
+      var o=$('#out p'); if(o) o.innerHTML='<span class="en">Your request is ready. Copy it and send it to '+esc(K.email)+'.</span><span class="ar">طلبك جاهز. انسخه وأرسله إلى '+esc(K.email)+'.</span>';
+    }
+    if(C.footer){ var f=document.querySelectorAll('footer > span');
+      if(f[0]) f[0].innerHTML='© '+new Date().getFullYear()+' '+bi(C.footer.company);
+      if(f[1]) f[1].innerHTML=bi(C.footer.trademark); }
+  }
+  // map: schematic projection x=(lon-34)*30+20, y=(37.5-lat)*30+20
+  function renderMap(pts){
+    var g=document.getElementById('mapDyn'); if(!g||!pts.length) return;
+    function xy(p){return [Math.round((p.lon-34)*30+20),Math.round((37.5-p.lat)*30+20)];}
+    var hq=pts.filter(function(p){return p.headquarters;})[0]||pts[0], H=xy(hq);
+    var out='',lab={en:'',ar:''},i=0;
+    pts.forEach(function(p){
+      var P=xy(p);
+      if(p!==hq){
+        var mx=(H[0]+P[0])/2, my=(H[1]+P[1])/2, dx=P[0]-H[0], dy=P[1]-H[1];
+        var cx=Math.round(mx-dy*0.25), cy=Math.round(my+dx*0.25);
+        var d='M'+H[0]+' '+H[1]+' Q'+cx+' '+cy+' '+P[0]+' '+P[1], len=Math.hypot(dx,dy);
+        out+='<path class="m-route" id="rt'+i+'" d="'+d+'"/>';
+        out+='<g class="m-truck"><circle r="4"><animateMotion dur="'+(1.6+len/80).toFixed(1)+'s" begin="'+((i*0.37)%1.5).toFixed(2)+'s" repeatCount="indefinite"><mpath href="#rt'+i+'"/></animateMotion></circle></g>';
+        out+='<circle class="m-city" cx="'+P[0]+'" cy="'+P[1]+'" r="5"/>'; i++;
+      }
+      var side=p.label||'right', x=P[0]+12, y=P[1]-2, an='start', sy=16;
+      if(side==='left'){x=P[0]-10;an='end';}
+      if(side==='below'){x=P[0];y=P[1]+34;an='middle';}
+      if(side==='above'){x=P[0];y=P[1]-24;an='middle';}
+      if(p===hq){x=P[0]+22;y=P[1]+20;}
+      ['en','ar'].forEach(function(L){
+        var nm=esc(p.name[L]||p.name.en)+(p===hq?(L==='en'?' · HQ':' · المقر'):'');
+        lab[L]+='<text class="m-lbl" x="'+x+'" y="'+y+'" text-anchor="'+an+'">'+nm+'</text><text class="m-sub" x="'+x+'" y="'+(y+sy)+'" text-anchor="'+an+'">'+esc((p.country||{})[L]||'')+'</text>';
+      });
+    });
+    out+='<circle class="m-hq-ring" cx="'+H[0]+'" cy="'+H[1]+'" r="15"/><circle class="m-hq" cx="'+H[0]+'" cy="'+H[1]+'" r="7"/>';
+    out+='<g class="en">'+lab.en+'</g><g class="ar">'+lab.ar+'</g>';
+    g.innerHTML=out;
+  }
+  fetch('site.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(render).catch(function(){});
+})();
+</script>
+
+</body>
+</html>

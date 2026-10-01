@@ -109,7 +109,7 @@
           }
         ],
         "icon": "milking",
-        "image": "images/rotary-platform.jpg",
+        "image": "rotary-platform.jpg",
         "image_fit": "cover"
       },
       {
@@ -132,7 +132,7 @@
           }
         ],
         "icon": "cooling",
-        "image": "images/milk-tank.jpg",
+        "image": "milk-tank.jpg",
         "image_fit": "contain"
       },
       {
@@ -246,7 +246,7 @@
       "en": "On a rotary, cows step onto a slowly turning platform, are prepped and attached at one fixed point, milk during one turn, and walk off where they came in. Your milkers stay in place while the herd comes to them.",
       "ar": "في المحلب الدوّار تصعد الأبقار إلى منصة تدور ببطء، ويتم تجهيزها وتركيب وحدات الحلب في نقطة ثابتة، وتُحلب خلال دورة واحدة، ثم تخرج من حيث دخلت. يبقى العاملون في مكانهم بينما يأتي القطيع إليهم."
     },
-    "photo": "images/rotary-milking.jpg",
+    "photo": "rotary-milking.jpg",
     "photo_caption": {
       "en": "A DeLaval rotary parlour in operation: every cow is milked in a single turn of the platform.",
       "ar": "محلب ديلافال دوّار أثناء التشغيل: تُحلب كل بقرة خلال دورة واحدة للمنصة."
@@ -265,7 +265,7 @@
           "en": "Cows stand side by side, and the operator attaches units from behind, between the hind legs. Compact, fast and safe for your staff.",
           "ar": "تقف الأبقار جنباً إلى جنب ويركّب العامل وحدات الحلب من الخلف بين الأرجل الخلفية. تصميم مدمج وسريع وآمن للعاملين."
         },
-        "image": "images/parallel.jpg",
+        "image": "parallel.jpg",
         "image_fit": "cover"
       },
       {
@@ -281,7 +281,7 @@
           "en": "Cows stand at an angle, so the operator gets a clear side view of the udder. A proven, flexible layout that is easy to expand.",
           "ar": "تقف الأبقار بزاوية مائلة فيرى العامل الضرع بوضوح من الجانب. تصميم مجرّب ومرن وسهل التوسعة."
         },
-        "image": "images/herringbone.jpg",
+        "image": "herringbone.jpg",
         "image_fit": "cover"
       },
       {
@@ -297,7 +297,7 @@
           "en": "Cows choose when to be milked, and the robot arm attaches automatically. Less labour and more data on every cow.",
           "ar": "تختار الأبقار وقت الحلب ويقوم الذراع الآلي بالتركيب تلقائياً. عمالة أقل وبيانات أكثر عن كل بقرة."
         },
-        "image": "images/vms.jpg",
+        "image": "vms.jpg",
         "image_fit": "contain"
       }
     ]

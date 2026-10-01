@@ -1,7 +1,13 @@
 [build]
   publish = "."
 
+# The editing screen: www.rrdjo.com/admin
+[[redirects]]
+  from = "/admin"
+  to = "/admin.html"
+  status = 200
+
 [[headers]]
-  for = "/content/*"
+  for = "/site.json"
   [headers.values]
     Cache-Control = "no-cache"

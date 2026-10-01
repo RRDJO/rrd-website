@@ -1,15 +1,14 @@
 # RRD website editor settings.
-# Change only the "repo:" line below to your GitHub username, e.g.  repo: rrd-jo/rrd-website
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/rrd-website
+  repo: rrdjo/rrd-website
   branch: main
   base_url: https://api.netlify.com
 site_url: https://www.rrdjo.com
 display_url: https://www.rrdjo.com
-logo_url: /images/favicon.png
-media_folder: images
-public_folder: images
+logo_url: /favicon.png
+media_folder: uploads
+public_folder: uploads
 editor:
   preview: false
 collections:
@@ -20,7 +19,7 @@ collections:
   files:
   - name: site
     label: All website content (English and Arabic)
-    file: content/site.json
+    file: site.json
     format: json
     fields:
     - name: hero
